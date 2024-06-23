@@ -15,3 +15,6 @@ RTL Archietecture
 - Soft copy of the hardware using Verilog
 
 ## Task 1
+Installation of RISC-V toolchain using VDI.
+
+Step 1: Installation of Oracle VirtualBox, which is an open source virtualization software. The virtual machine have an operating system and used as a physical computer inside your laptop.
