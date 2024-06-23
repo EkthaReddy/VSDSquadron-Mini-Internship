@@ -1,7 +1,7 @@
-# vsdsquadron-mini-internship
+# VSDSquadron-Mini-Internship
 An internship on RISC-V and VLSI using VSDSquadron Miniboard provided by VLSI System Design(VSD). 
 
-## Overview of internship
+## Overview of the internship
 The internship provides the Code Specification through C modelling.
 It involves two process
 
@@ -16,8 +16,16 @@ RTL Archietecture
 - Soft copy of the hardware using Verilog
 
 ## Task 1
-Installation of RISC-V toolchain using VDI.
+The task 1 includes the following
+- Installation of RISC-V toolchain using VDI.
+- C Program for sum from one to n.
+- Checking the result of C code
+- RISC-V Simulator for compiling and running the code
+- Assembly language
 
+
+ The steps to be followed are:
+ 
 #### Step 1: Installation of Oracle VirtualBox, which is an open source virtualization software. The virtual machine have an operating system and used as a physical computer inside your laptop.
 
 
@@ -31,7 +39,7 @@ Installation of RISC-V toolchain using VDI.
 #### Step 3: Write the command below to open the editor named leafpad to write C code
 
 ![Screenshot (568)](https://github.com/EkthaReddy/vsdsquadron-mini-internship/assets/152515939/baf5e27b-ee8b-42a9-b2c7-e40bb88c33d8)
- Note:  
+ Note for the above command explanation:
  - command line cd is to check for home directory
  - leafpad to open editor 
  - sum_one_to_one is the file name C code in editor
