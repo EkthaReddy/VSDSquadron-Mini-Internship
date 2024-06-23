@@ -24,10 +24,14 @@ Step 1: Installation of Oracle VirtualBox, which is an open source virtualizatio
 ![Screenshot (567)](https://github.com/EkthaReddy/vsdsquadron-mini-internship/assets/152515939/48ae5d97-0ce1-40bd-9403-e60d255d4758)
 
 Step 2: Open the terminal inside the VirtualBox
+
 /home/vsduser/Pictures/Terminal inside the VM.png
 
 Step 3: Write the command below to open the editor called leafpad
-/home/vsduser/Pictures/C Code for sum from one to n.png
+
+![C Code for sum from one to n](https://github.com/EkthaReddy/vsdsquadron-mini-internship/assets/152515939/37e5d37e-7b55-49ce-8aef-70d3d9f57d0e)
+
+
 Write the C program for sum of one to n in the terminal 
 
 - 
