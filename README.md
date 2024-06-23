@@ -26,26 +26,29 @@ The task 1 includes the following
 
  The steps to be followed are:
  
-#### Step 1: Installation of Oracle VirtualBox, which is an open source virtualization software. The virtual machine have an operating system and used as a physical computer inside your laptop.
+#### Step 1: Installation of Oracle VirtualBox.
 
+The VirtualBox is an open source software and an operating system which runs as a physical computer inside the pc/laptop. 
 
 ![Screenshot (567)](https://github.com/EkthaReddy/vsdsquadron-mini-internship/assets/152515939/48ae5d97-0ce1-40bd-9403-e60d255d4758)
 
 #### Step 2: Open the terminal inside the VirtualBox
 
-
 ![Terminal inside the VM](https://github.com/EkthaReddy/vsdsquadron-mini-internship/assets/152515939/5e831292-ae27-4409-b6d4-dc98b50fb88a)
 
-#### Step 3: Write the command below to open the editor named leafpad to write C code
+#### Step 3: To open the editor named leafpad for writing C code.
 
 ![Screenshot (568)](https://github.com/EkthaReddy/vsdsquadron-mini-internship/assets/152515939/baf5e27b-ee8b-42a9-b2c7-e40bb88c33d8)
  Note for the above command explanation:
- - command line cd is to check for home directory
- - leafpad to open editor 
- - sum_one_to_one is the file name C code in editor
+ - command line cd is to check for home directory.
+ - leafpad to open editor.
+ - sum_one_to_one is the file name for C code to be written in editor.
 
 
 #### Step 4: Write the C program for sum of one to n in the terminal 
+
+The leafpad editor opened, write the simple c code for sum of 1 to n,
+
 ![Screenshot (570)](https://github.com/EkthaReddy/vsdsquadron-mini-internship/assets/152515939/6e565127-674e-47c4-8c48-f142e319ebce)
 
 
