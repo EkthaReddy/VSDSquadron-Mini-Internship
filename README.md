@@ -78,26 +78,20 @@ Command line
 
 The Assembly language codes:
 
-![main section of assembly code](https://github.com/EkthaReddy/vsdsquadron-mini-internship/assets/152515939/053a0a17-79c8-48af-8227-f59f7dd6786e)
+![assembly code of C code](https://github.com/EkthaReddy/vsdsquadron-mini-internship/assets/152515939/0ce26ef8-3b1e-41dd-8830-217cddd2d7fc)
+
 
 After that type out this line;
 
 ![WhatsApp Image 2024-06-24 at 12 08 16 AM (1)](https://github.com/EkthaReddy/vsdsquadron-mini-internship/assets/152515939/2cc69a0e-c167-4320-bf89-a7910f76ac37)
 
-The main() 
-![main section](https://github.com/EkthaReddy/vsdsquadron-mini-internship/assets/152515939/8f35e288-8920-4822-bbc3-bf5af0521f7f)
-![C Code for sum from one to n](https://github.com/EkthaReddy/vsdsquadron-mini-internship/assets/152515939/3eccaffe-4e6b-4602-9496-c845b668036e)
+Step 8: Search the main() 
+
+![main section of assembly code](https://github.com/EkthaReddy/vsdsquadron-mini-internship/assets/152515939/053a0a17-79c8-48af-8227-f59f7dd6786e)
 
 
+Step 7: Try out for different 
 
-
-
-
-
-
-
-
-![assembly code of C code](https://github.com/EkthaReddy/vsdsquadron-mini-internship/assets/152515939/0ce26ef8-3b1e-41dd-8830-217cddd2d7fc)
 ![another intrustion instead of o1](https://github.com/EkthaReddy/vsdsquadron-mini-internship/assets/152515939/527e9418-4ab3-44b7-b00d-3c6546a43e04)
 
 
