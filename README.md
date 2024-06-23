@@ -25,7 +25,8 @@ Step 1: Installation of Oracle VirtualBox, which is an open source virtualizatio
 
 Step 2: Open the terminal inside the VirtualBox
 
-/home/vsduser/Pictures/Terminal inside the VM.png
+
+![Terminal inside the VM](https://github.com/EkthaReddy/vsdsquadron-mini-internship/assets/152515939/5e831292-ae27-4409-b6d4-dc98b50fb88a)
 
 Step 3: Write the command below to open the editor named leafpad to write C code
 
