@@ -51,19 +51,22 @@ The leafpad editor opened, write the simple c code for sum of 1 to n,
 
 ![Screenshot (570)](https://github.com/EkthaReddy/vsdsquadron-mini-internship/assets/152515939/6e565127-674e-47c4-8c48-f142e319ebce)
 
+Save the file in the editor
+
 
 ![C Code for sum from one to n](https://github.com/EkthaReddy/vsdsquadron-mini-internship/assets/152515939/37e5d37e-7b55-49ce-8aef-70d3d9f57d0e)
 
-Save the file in the editor
 
 #### Step 5: To check the result of C code
 
-- Type the below command line to ensure the fle is saved.
+- Type the below command line to ensure the file is saved.
+  
 ![WhatsApp Image 2024-06-23 at 11 39 36 PM](https://github.com/EkthaReddy/vsdsquadron-mini-internship/assets/152515939/c70488ff-78d7-4c14-910c-28feea698aca)
+
+- This ./a.out command will generate the output 
 
 ![WhatsApp Image 2024-06-23 at 11 39 36 PM (1)](https://github.com/EkthaReddy/vsdsquadron-mini-internship/assets/152515939/093bd684-20dc-4a5d-bdbf-57e5aa9de063)
 
-- This ./a.out command will generate the output 
 
 
 - The sum for 1 to 5 is 15 which is also verified using calculator
