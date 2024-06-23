@@ -31,9 +31,10 @@ Step 2: Open the terminal inside the VirtualBox
 Step 3: Write the command below to open the editor named leafpad to write C code
 
 ![Screenshot (568)](https://github.com/EkthaReddy/vsdsquadron-mini-internship/assets/152515939/baf5e27b-ee8b-42a9-b2c7-e40bb88c33d8)
- Note: - command line cd is to check for home directory
-        - leafpad to open editor 
-        - sum_one_to_one is the file name C code in editor
+ Note:  
+ - command line cd is to check for home directory
+ - leafpad to open editor 
+ - sum_one_to_one is the file name C code in editor
 
 
 Step 3: Write the C program for sum of one to n in the terminal 
@@ -45,14 +46,18 @@ Step 3: Write the C program for sum of one to n in the terminal
 Save the file in the editor
 
 Step 4: To check the result of C code
+
 Type the below command line to ensure the fle is saved.
 ![WhatsApp Image 2024-06-23 at 11 39 36 PM](https://github.com/EkthaReddy/vsdsquadron-mini-internship/assets/152515939/c70488ff-78d7-4c14-910c-28feea698aca)
 
-This ./a.out command will generate the output 
-
 ![WhatsApp Image 2024-06-23 at 11 39 36 PM (1)](https://github.com/EkthaReddy/vsdsquadron-mini-internship/assets/152515939/093bd684-20dc-4a5d-bdbf-57e5aa9de063)
 
+This ./a.out command will generate the output 
+
+
 The sum for 1 to 5 is 15 which is also verified using calculator
+
+
 ![with cc](https://github.com/EkthaReddy/vsdsquadron-mini-internship/assets/152515939/42492408-96b8-4275-95ae-c7966b65854a)
 
 Step 5: Compile and run the C code using RISC-V Simulator 
@@ -71,12 +76,12 @@ Step 5: Compile and run the C code using RISC-V Simulator
  ](https://github.com/EkthaReddy/vsdsquadron-mini-internship/assets/152515939/dbf0af7d-fe05-4547-a280-7b710e39f924)
 
 
-Step 7: Assembly code C Program
-Command line
+Step 7: Assembly code 
+Command line for generating the assembly code is:
 
 ![WhatsApp Image 2024-06-24 at 12 08 16 AM](https://github.com/EkthaReddy/vsdsquadron-mini-internship/assets/152515939/0850193a-d680-4772-a4b8-52e08c05c943)
 
-The Assembly language codes:
+The Assembly codes:
 
 ![assembly code of C code](https://github.com/EkthaReddy/vsdsquadron-mini-internship/assets/152515939/0ce26ef8-3b1e-41dd-8830-217cddd2d7fc)
 
@@ -89,9 +94,5 @@ Step 8: Search the main()
 
 ![main section of assembly code](https://github.com/EkthaReddy/vsdsquadron-mini-internship/assets/152515939/053a0a17-79c8-48af-8227-f59f7dd6786e)
 
-
-Step 7: Try out for different 
-
-![another intrustion instead of o1](https://github.com/EkthaReddy/vsdsquadron-mini-internship/assets/152515939/527e9418-4ab3-44b7-b00d-3c6546a43e04)
 
 
