@@ -18,17 +18,17 @@ RTL Archietecture
 ## Task 1
 Installation of RISC-V toolchain using VDI.
 
-### Step 1: Installation of Oracle VirtualBox, which is an open source virtualization software. The virtual machine have an operating system and used as a physical computer inside your laptop.
+#### Step 1: Installation of Oracle VirtualBox, which is an open source virtualization software. The virtual machine have an operating system and used as a physical computer inside your laptop.
 
 
 ![Screenshot (567)](https://github.com/EkthaReddy/vsdsquadron-mini-internship/assets/152515939/48ae5d97-0ce1-40bd-9403-e60d255d4758)
 
-### Step 2: Open the terminal inside the VirtualBox
+#### Step 2: Open the terminal inside the VirtualBox
 
 
 ![Terminal inside the VM](https://github.com/EkthaReddy/vsdsquadron-mini-internship/assets/152515939/5e831292-ae27-4409-b6d4-dc98b50fb88a)
 
-### Step 3: Write the command below to open the editor named leafpad to write C code
+#### Step 3: Write the command below to open the editor named leafpad to write C code
 
 ![Screenshot (568)](https://github.com/EkthaReddy/vsdsquadron-mini-internship/assets/152515939/baf5e27b-ee8b-42a9-b2c7-e40bb88c33d8)
  Note:  
@@ -37,7 +37,7 @@ Installation of RISC-V toolchain using VDI.
  - sum_one_to_one is the file name C code in editor
 
 
-### Step 4: Write the C program for sum of one to n in the terminal 
+#### Step 4: Write the C program for sum of one to n in the terminal 
 ![Screenshot (570)](https://github.com/EkthaReddy/vsdsquadron-mini-internship/assets/152515939/6e565127-674e-47c4-8c48-f142e319ebce)
 
 
@@ -45,7 +45,7 @@ Installation of RISC-V toolchain using VDI.
 
 Save the file in the editor
 
-### Step 5: To check the result of C code
+#### Step 5: To check the result of C code
 
 - Type the below command line to ensure the fle is saved.
 ![WhatsApp Image 2024-06-23 at 11 39 36 PM](https://github.com/EkthaReddy/vsdsquadron-mini-internship/assets/152515939/c70488ff-78d7-4c14-910c-28feea698aca)
@@ -60,7 +60,7 @@ Save the file in the editor
 
 ![with cc](https://github.com/EkthaReddy/vsdsquadron-mini-internship/assets/152515939/42492408-96b8-4275-95ae-c7966b65854a)
 
-### Step 6: Compile and run the C code using RISC-V Simulator 
+#### Step 6: Compile and run the C code using RISC-V Simulator 
 
 - Compile the code with RISC-V compiler by using the command line
   
@@ -76,7 +76,7 @@ Save the file in the editor
  ](https://github.com/EkthaReddy/vsdsquadron-mini-internship/assets/152515939/dbf0af7d-fe05-4547-a280-7b710e39f924)
 
 
-### Step 7: Assembly code 
+#### Step 7: Assembly code 
 - Command line for generating the assembly code is:
 
 ![WhatsApp Image 2024-06-24 at 12 08 16 AM](https://github.com/EkthaReddy/vsdsquadron-mini-internship/assets/152515939/0850193a-d680-4772-a4b8-52e08c05c943)
@@ -90,7 +90,7 @@ Save the file in the editor
 
 ![WhatsApp Image 2024-06-24 at 12 08 16 AM (1)](https://github.com/EkthaReddy/vsdsquadron-mini-internship/assets/152515939/2cc69a0e-c167-4320-bf89-a7910f76ac37)
 
-### Step 8: Search the main() 
+#### Step 8: Search the main() 
 
 ![main section of assembly code](https://github.com/EkthaReddy/vsdsquadron-mini-internship/assets/152515939/053a0a17-79c8-48af-8227-f59f7dd6786e)
 
