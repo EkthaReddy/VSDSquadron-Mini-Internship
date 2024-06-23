@@ -54,10 +54,38 @@ This ./a.out command will generate the output
 
 The sum for 1 to 5 is 15 which is also verified using calculator
 ![with cc](https://github.com/EkthaReddy/vsdsquadron-mini-internship/assets/152515939/42492408-96b8-4275-95ae-c7966b65854a)
-![Terminal inside the VM](https://github.com/EkthaReddy/vsdsquadron-mini-internship/assets/152515939/95b7a536-90f5-4863-bcc5-703e5b331060)
+
+Step 5: Compile and run the C code using RISC-V Simulator 
+
+- Compile the code with RISC-V compiler by using the command line
+  
+![Screenshot (572)](https://github.com/EkthaReddy/vsdsquadron-mini-internship/assets/152515939/db9d65fc-a0bd-4104-9d12-d77d19614d07)
+
+- Run the C code by RISC-V Simulator using below
+
+![Screenshot (573)](https://github.com/EkthaReddy/vsdsquadron-mini-internship/assets/152515939/cd4c2428-a270-4d1e-a75c-0b09c212ecd2)
+
+
+
+![compile riscv with gcc![Uploading Screenshot (572).png…]()
+ ](https://github.com/EkthaReddy/vsdsquadron-mini-internship/assets/152515939/dbf0af7d-fe05-4547-a280-7b710e39f924)
+
+
+Step 7: Assembly code C Program
+Command line
+
+![WhatsApp Image 2024-06-24 at 12 08 16 AM](https://github.com/EkthaReddy/vsdsquadron-mini-internship/assets/152515939/0850193a-d680-4772-a4b8-52e08c05c943)
+
+The Assembly language codes:
+
 ![main section of assembly code](https://github.com/EkthaReddy/vsdsquadron-mini-internship/assets/152515939/053a0a17-79c8-48af-8227-f59f7dd6786e)
+
+After that type out this line;
+
+![WhatsApp Image 2024-06-24 at 12 08 16 AM (1)](https://github.com/EkthaReddy/vsdsquadron-mini-internship/assets/152515939/2cc69a0e-c167-4320-bf89-a7910f76ac37)
+
+The main() 
 ![main section](https://github.com/EkthaReddy/vsdsquadron-mini-internship/assets/152515939/8f35e288-8920-4822-bbc3-bf5af0521f7f)
-![compile riscv with gcc ](https://github.com/EkthaReddy/vsdsquadron-mini-internship/assets/152515939/dbf0af7d-fe05-4547-a280-7b710e39f924)
 ![C Code for sum from one to n](https://github.com/EkthaReddy/vsdsquadron-mini-internship/assets/152515939/3eccaffe-4e6b-4602-9496-c845b668036e)
 
 
