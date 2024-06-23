@@ -43,3 +43,33 @@ Step 3: Write the C program for sum of one to n in the terminal
 ![C Code for sum from one to n](https://github.com/EkthaReddy/vsdsquadron-mini-internship/assets/152515939/37e5d37e-7b55-49ce-8aef-70d3d9f57d0e)
 
 Step 4: 
+
+
+
+
+
+
+
+
+
+
+![with cc](https://github.com/EkthaReddy/vsdsquadron-mini-internship/assets/152515939/42492408-96b8-4275-95ae-c7966b65854a)
+![Terminal inside the VM](https://github.com/EkthaReddy/vsdsquadron-mini-internship/assets/152515939/95b7a536-90f5-4863-bcc5-703e5b331060)
+![main section of assembly code](https://github.com/EkthaReddy/vsdsquadron-mini-internship/assets/152515939/053a0a17-79c8-48af-8227-f59f7dd6786e)
+![main section](https://github.com/EkthaReddy/vsdsquadron-mini-internship/assets/152515939/8f35e288-8920-4822-bbc3-bf5af0521f7f)
+![compile riscv with gcc ](https://github.com/EkthaReddy/vsdsquadron-mini-internship/assets/152515939/dbf0af7d-fe05-4547-a280-7b710e39f924)
+![C Code for sum from one to n](https://github.com/EkthaReddy/vsdsquadron-mini-internship/assets/152515939/3eccaffe-4e6b-4602-9496-c845b668036e)
+
+
+
+
+
+
+
+
+
+
+![assembly code of C code](https://github.com/EkthaReddy/vsdsquadron-mini-internship/assets/152515939/0ce26ef8-3b1e-41dd-8830-217cddd2d7fc)
+![another intrustion instead of o1](https://github.com/EkthaReddy/vsdsquadron-mini-internship/assets/152515939/527e9418-4ab3-44b7-b00d-3c6546a43e04)
+
+
