@@ -7,15 +7,15 @@ The internship is about the two main key take aways:
 
 #### 1. Chip Design
 
-To build the chip, there should be a code specification especially in C model for applications. 
+To build the chip, there should be a code specification especially in C model for applications to run. 
 In simpler terms,
 making of the chip which needs riscv processor and it will start from the basic step of specification. 
 Specification for RISC-V processor which is used in various applications like  embedded systems, automotive systems, artificial intelligence and many more. 
 
 Note: The specifications can also be application specific, basically the SoC designs which made of ASSIC, microcontroller and microprocessor.
 
-So, the VSDSquadron Mini Board provided is the microcontroller which designed to apply for any applications.
-The board will have the modelling specification in C which will check whether the application is working or not through testbench which are the test vectors to determine the accuracy, correctness of the model.
+So, VSDSquadron Mini Board provided is the microcontroller which designed to apply for any applications.
+The board will have the modelling specification in C which will check whether the application is working or not through testbench which are the test vectors to determine the accuracy and correctness of the model.
 
 Basically, the process involes running simulation for c model and applicatios to present the output.
 
@@ -25,7 +25,14 @@ Therefore, this part is all about
 
 #### 2. RTL Architecture
 
+Soft copy of the hardware is written in Hardware Description Language .i.e., processor model is converted into the HDL because application can run faster in HDL compared with a software.
+
+Therefore, this part explains the,
 - Soft copy of the hardware using Verilog
+
+
+And in the final step the output from chip design and RTL Architecture must be equal to show that the desired output from models are achieved.
+
 
 ## Task 1
 The task 1 includes the following
