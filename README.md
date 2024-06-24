@@ -19,55 +19,11 @@ The board will have the modelling specification in C which will check whether th
 
 Basically, the process involes running simulation for c model and applicatios to present the output.
 
-#### 2. RTL Architecture
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-The internship provides the Code Specification through C modelling.
-It involves two process
-
-Chip Modelling
-
+Therefore, this part is all about
 - Running testbench in C language for C model Specifications
 - Build processor application specification
 
-RTL Archietecture
-
+#### 2. RTL Architecture
 
 - Soft copy of the hardware using Verilog
 
