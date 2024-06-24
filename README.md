@@ -1,5 +1,5 @@
 # VSDSquadron-Mini-Internship
-An internship on RISC-V and VLSI using VSDSquadron Miniboard provided by Kunal Gosh in VLSI System Design(VSD)
+An internship on RISC-V and VLSI using VSDSquadron Mini Board provided by Kunal Gosh in VLSI System Design (VSD).
 
 ## Overview of the internship
 
@@ -9,7 +9,7 @@ The internship is about the two main key take aways:
 
 To build the chip, there should be a code specification especially in C model for applications to run. 
 In simpler terms,
-making of the chip which needs riscv processor and it will start from the basic step of specification. 
+making of the chip which needs RISC-V processor and it will start from the basic step of specification. 
 Specification for RISC-V processor which is used in various applications like  embedded systems, automotive systems, artificial intelligence and many more. 
 
 Note: The specifications can also be application specific, basically the SoC designs which made of ASSIC, microcontroller and microprocessor.
@@ -35,13 +35,14 @@ And in the final step the output from chip design and RTL Architecture must be e
 
 
 ## Task 1
-The task 1 includes the following
+The task 1 of the internship includes the following
 - Installation of RISC-V toolchain using VDI.
 - C Program for sum from one to n.
 - Checking the result of C code
 - RISC-V Simulator for compiling and running the code
 - Assembly language
 
+Overall, it is about writing the C code for sum from one to n followed by compiling and running by RISC-V Simulator.
 
  The steps to be followed are:
  
