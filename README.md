@@ -1,7 +1,63 @@
 # VSDSquadron-Mini-Internship
-An internship on RISC-V and VLSI using VSDSquadron Miniboard provided by VLSI System Design(VSD). 
+An internship on RISC-V and VLSI using VSDSquadron Miniboard provided by Kunal Gosh in VLSI System Design(VSD)
 
 ## Overview of the internship
+
+The internship is about the two main key take aways:
+
+#### 1. Chip Design
+
+To build the chip, there should be a code specification especially in C model for applications. 
+In simpler terms,
+making of the chip which needs riscv processor and it will start from the basic step of specification. 
+Specification for RISC-V processor which is used in various applications like  embedded systems, automotive systems, artificial intelligence and many more. 
+
+Note: The specifications can also be application specific, basically the SoC designs which made of ASSIC, microcontroller and microprocessor.
+
+So, the VSDSquadron Mini Board provided is the microcontroller which designed to apply for any applications.
+The board will have the modelling specification in C which will check whether the application is working or not through testbench which are the test vectors to determine the accuracy, correctness of the model.
+
+Basically, the process involes running simulation for c model and applicatios to present the output.
+
+#### 2. RTL Architecture
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 The internship provides the Code Specification through C modelling.
 It involves two process
 
