@@ -1,6 +1,7 @@
 # VSDSquadron-Mini-Internship
 An internship on RISC-V and VLSI using VSDSquadron Mini Board provided by Kunal Gosh in VLSI System Design (VSD).
 
+<details>
 <summary>## Overview of the internship</summary>
 
 The internship is about the two main key take aways:
@@ -32,6 +33,7 @@ Therefore, this part explains the,
 
 
 And in the final step the output from chip design and RTL Architecture must be equal to show that the desired output from models are achieved.
+</details>
 
 <details>
  
