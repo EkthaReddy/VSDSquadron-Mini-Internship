@@ -146,7 +146,7 @@ A vending machine is a large self-service, often box-like device that sells smal
 
 This is what a vending machine looks like and we often find them at places like airport, metro stations or amusement parks.
 
-### Project : Fuctions of my Vending Machine 
+### Project : Functions of my Vending Machine 
 #### What does it do?
 
 We now know that, vending machine sells the desired goods when the coins are inserted,
@@ -158,11 +158,13 @@ Let us define the each state with it's money oriented
 - coin 20 represent the case 3.
 - coin 50 represent the case 4.
 
-Moreover, while purchasing goods, if extra money is inserted the vending machine will return back the money in 5, 10, 20 ruppee coins as they are readily available with almost everyone.
+Moreover, while purchasing goods, if extra money is inserted the vending machine will return back in 5, 10, 20 ruppee coins as they are readily available with almost everyone.
 
-Firstly, we will have an idle state which shows no transaction that means the coins are not inserted yet. So, the change of goods will not happen.
-In case 1, the 5 ruppee coin is inserted, that means no coin will be returned and good is being purchased.
-In case 2, the 10 ruppee coin is inserted, five ruppee coin will be returned back and good is being purchased.
-In case 3, the 20 ruppee coin is inserted, five ruppee coin and ten ruppee coin will be returned back and good is being purchased.
-In case 4, the 50 ruppee coin is inserted, five ruppee coin and twenty ruppee coin will be returned back and good is being purchased.
+Now, we will look on each specific case with it's function to be performed.
+
+Firstly, we have an idle state which shows no transaction that means the coins are not inserted yet. So, the change of goods will not happen. However, 
+in case 1, the 5 ruppee coin is inserted to purchase five ruppee item, that means no coin will be returned and good is being purchased. Although,
+five ruppee coin will be returned back in case 2 when the 10 ruppee coin is inserted and it will also mention that the good is being purchased. Likewise,
+in case 3, the 20 ruppee coin is inserted which return back five ruppee coin and ten ruppee coin along with an indication that good is being purchased. Same way,
+when 50 ruppee coin is inserted in case 4, five ruppee coin and twenty ruppee coin will be returned back and good is being purchased.
 
