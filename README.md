@@ -136,6 +136,7 @@ Save the file in the editor
 
 <details>
  <summary> Task 2</summary>
+ 
 #### Change Dispense Wizard: Engineering a Vending Machine with Advanced Change System
 
 Task 2 is about writing the c program for the selected project along with compiling and runing with gcc command. But, before that Let us first take a look on Vending Machine and it's functunality.
