@@ -187,16 +187,7 @@ As a result, the project introduces the change despense mechanism for faster, re
 
 ### C code for Vending Machine
 
-
-
-
-
-
-
-
-
-
-
+We have now understood the functionality of Vending Machine, the next task is to write the C program for the project in VirtualBox Terminal.
 
 
 
