@@ -33,8 +33,9 @@ Therefore, this part explains the,
 
 And in the final step the output from chip design and RTL Architecture must be equal to show that the desired output from models are achieved.
 
-
-## Task 1
+<details>
+ 
+<summary> ## Task 1 </summary>summary>
 The task 1 of the internship includes the following
 - Installation of RISC-V toolchain using VDI.
 - C Program for sum from one to n.
@@ -128,7 +129,7 @@ Save the file in the editor
 
 ![main section of assembly code](https://github.com/EkthaReddy/vsdsquadron-mini-internship/assets/152515939/053a0a17-79c8-48af-8227-f59f7dd6786e)
 
-
+</details>
 
 ## Task 2
 #### Change Dispense Wizard: Engineering a Vending Machine with Advanced Change System
