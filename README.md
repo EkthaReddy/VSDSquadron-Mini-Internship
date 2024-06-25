@@ -375,7 +375,30 @@ The output shows the state transitions and actions of the vending machine based 
 
 ## Task 3
 
+-o1 command
 
+
+
+
+
+
+
+
+![verification for spike for o1 command](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/8298625e-68ea-4ac4-bf77-c43664ba96ed)
+![debugging for o1](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/85ba39df-3da9-4029-92d0-16546e5233f8)
+![continue o1 debugging](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/baf0e1d6-862a-4fba-acc7-5cf293bd3838)
+![continue o1](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/1abe08ab-89e4-4550-b763-ccba5e638a5a)
+
+
+
+
+![cotinue debugging o1](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/fa44ce12-9549-44ea-bfba-d137c3faaab9)
+
+
+
+
+
+-ofast command
 
 
 
