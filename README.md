@@ -361,5 +361,6 @@ int main() {
 #### Compiling the C code with RISC-V gcc
 
 
+![vending machine result](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/9f5484cd-6c58-4879-894d-c95b99e5b41e)
 
 
