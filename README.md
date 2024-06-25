@@ -358,6 +358,8 @@ int main() {
 - If the coin value is `0`, the loop breaks, ending the program.
 
 
+#### Compiling the C code with RISC-V gcc
+
 
 
 
