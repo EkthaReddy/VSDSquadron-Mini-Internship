@@ -360,6 +360,10 @@ int main() {
 
 #### Compiling the C code with RISC-V gcc
 
+In the last step of task 2, the code written in leafpad ediotr will be checked for any errors by using the command line (`gcc file_name`). Therefore, for my project I have used (`gcc vending_machine`) and if the code is right, then give command (`ls -ltr`) for compiling the code in RISC-V. 
+
+To check the output of  C code, run the code by using (`./a.out`).
+
 
 ![vending machine result](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/9f5484cd-6c58-4879-894d-c95b99e5b41e)
 
