@@ -39,6 +39,7 @@ And in the final step the output from chip design and RTL Architecture must be e
 <details>
  
 <summary> Task 1 </summary>
+
 The task 1 of the internship includes the following
 - Installation of RISC-V toolchain using VDI.
 - C Program for sum from one to n.
