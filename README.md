@@ -130,3 +130,39 @@ Save the file in the editor
 
 
 
+
+
+## Task 2
+#### Change Dispense Wizard: Engineering a Vending Machine with Advanced Change System
+
+Task 2 is about writing the c program for the selected project along with compiling and runing with gcc command. But, before that Let us first take a look on Vending Machine and it's functunality.
+
+
+### What is Vending Machine?
+
+A vending machine is a large self-service, often box-like device that sells small items like snacks, drinks, or other goods. You put money or a credit card into the machine, choose what you want to buy by pressing a button or touchscreen, and then the machine gives you the item you selected. It’s a convenient way to buy things quickly without needing to go to a store or interact with a cashier.
+
+![image](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/e768dbd5-291a-4e52-841c-b0215eac0530)
+
+This is what a vending machine looks like and we often find them at places like airport, metro stations or amusement parks.
+
+### Project : Fuctions of my Vending Machine 
+#### What does it do?
+
+We now know that, vending machine sells the desired goods when the coins are inserted,
+In this project we will be using 5, 10, 20 and 50 ruppee coins to purchase a five ruppee product.
+In this, it will have five case to represent each transaction that are going to have ,i.e., the each case will represent the transaction to be made in the vending machine. 
+Let us define the each state with it's money oriented 
+- coin 5 represent the case 1.
+- coin 10 represent the case 2.
+- coin 20 represent the case 3.
+- coin 50 represent the case 4.
+
+Moreover, while purchasing goods, if extra money is inserted the vending machine will return back the money in 5, 10, 20 ruppee coins as they are readily available with almost everyone.
+
+Firstly, we will have an idle state which shows no transaction that means the coins are not inserted yet. So, the change of goods will not happen.
+In case 1, the 5 ruppee coin is inserted, that means no coin will be returned and good is being purchased.
+In case 2, the 10 ruppee coin is inserted, five ruppee coin will be returned back and good is being purchased.
+In case 3, the 20 ruppee coin is inserted, five ruppee coin and ten ruppee coin will be returned back and good is being purchased.
+In case 4, the 50 ruppee coin is inserted, five ruppee coin and twenty ruppee coin will be returned back and good is being purchased.
+
