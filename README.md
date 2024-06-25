@@ -2,7 +2,8 @@
 An internship on RISC-V and VLSI using VSDSquadron Mini Board provided by Kunal Gosh in VLSI System Design (VSD).
 
 <details>
-<summary>## Overview of the internship</summary>
+<summary> **Overview of the internship**</summary>
+
 
 The internship is about the two main key take aways:
 
@@ -133,7 +134,8 @@ Save the file in the editor
 
 </details>
 
-## Task 2
+<details>
+ <summary>**Task 2**</summary>
 #### Change Dispense Wizard: Engineering a Vending Machine with Advanced Change System
 
 Task 2 is about writing the c program for the selected project along with compiling and runing with gcc command. But, before that Let us first take a look on Vending Machine and it's functunality.
@@ -372,3 +374,4 @@ To check the output of  C code, run the code by using (`./a.out`).
 **Explanation to output**:
 The output shows the state transitions and actions of the vending machine based on coin inputs. Each entry updates the state and outputs whether a product is dispensed (`nw_pa = 1`) and if any change is returned (`ret5`, `ret10`, `ret20`). The session ends when `0` is inputted.
 
+</details>
