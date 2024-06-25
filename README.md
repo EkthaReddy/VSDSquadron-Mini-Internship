@@ -134,7 +134,7 @@ Save the file in the editor
 
 ## Task 2
  
-#### Change Dispense Wizard: Engineering a Vending Machine with Advanced Change System
+### Change Dispense Wizard: Engineering a Vending Machine with Advanced Change System
 
 Task 2 is about writing the c program for the selected project along with compiling and runing with gcc command. But, before that Let us first take a look on Vending Machine and it's functunality.
 
@@ -269,7 +269,7 @@ int main() {
 
 -----------------------------------------------------------------------------------------------
 
-#### Explanation to code:
+**Explanation to code**:
 
 - **State Definition**:
 ```c
@@ -279,7 +279,7 @@ typedef enum {
 ```
 - **State Enum**: Defines the possible states of the vending machine using an enumeration. These states correspond to the initial state (`S0`) and states for different coin values (`S5`, `S10`, `S20`, `S50`).
 
-### Vending Machine Function
+**Vending Machine Function**
 ```c
 void vending_machine(State *state, int coin, int *nw_pa, int *ret5, int *ret10, int *ret20) {
     *nw_pa = 0;
@@ -331,7 +331,7 @@ void vending_machine(State *state, int coin, int *nw_pa, int *ret5, int *ret10, 
   - In each case block, the function checks the coin value and updates the state accordingly.
   - Depending on the state, it may also set the output signals to indicate if a product is dispensed (`nw_pa`) or if change is returned (`ret5`, `ret10`, `ret20`).
 
-### Main Function
+**Main Function**
 ```c
 int main() {
     State state = S0;
@@ -359,7 +359,7 @@ int main() {
 - If the coin value is `0`, the loop breaks, ending the program.
 
 
-#### Compiling the C code with RISC-V gcc
+### Compiling the C code with RISC-V gcc
 
 In the last step of task 2, the code written in leafpad ediotr will be checked for any errors by using the command line (`gcc file_name`). Therefore, for my project I have used (`gcc vending_machine`) and if the code is right, then give command (`ls -ltr`) for compiling the code in RISC-V. 
 
