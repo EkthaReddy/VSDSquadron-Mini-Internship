@@ -1,8 +1,7 @@
 # VSDSquadron-Mini-Internship
 An internship on RISC-V and VLSI using VSDSquadron Mini Board provided by Kunal Gosh in VLSI System Design (VSD).
 
-<details>
-<summary> Overview of the internship</summary>
+## Overview of the internship
 
 
 The internship is about the two main key take aways:
@@ -36,9 +35,7 @@ Therefore, this part explains the,
 And in the final step the output from chip design and RTL Architecture must be equal to show that the desired output from models are achieved.
 </details>
 
-<details>
- 
-<summary> Task 1 </summary>
+## Task 1
 
 The task 1 of the internship includes the following
 - Installation of RISC-V toolchain using VDI.
@@ -133,10 +130,9 @@ Save the file in the editor
 
 ![main section of assembly code](https://github.com/EkthaReddy/vsdsquadron-mini-internship/assets/152515939/053a0a17-79c8-48af-8227-f59f7dd6786e)
 
-</details>
 
-<details>
- <summary> Task 2</summary>
+
+## Task 2
  
 #### Change Dispense Wizard: Engineering a Vending Machine with Advanced Change System
 
@@ -376,4 +372,4 @@ To check the output of  C code, run the code by using (`./a.out`).
 **Explanation to output**:
 The output shows the state transitions and actions of the vending machine based on coin inputs. Each entry updates the state and outputs whether a product is dispensed (`nw_pa = 1`) and if any change is returned (`ret5`, `ret10`, `ret20`). The session ends when `0` is inputted.
 
-</details>
+
