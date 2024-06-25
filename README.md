@@ -266,11 +266,11 @@ int main() {
     return 0;
 }
 
+-----------------------------------------------------------------------------------------------
 
+#### Explanation to code:
 
-##### Explanation to code:
-
-- State Definition
+- **State Definition**:
 ```c
 typedef enum {
     S0, S5, S10, S20, S50
@@ -354,16 +354,8 @@ int main() {
 }
 ```
 - **State Initialization**: Initializes the state to `S0` (initial state).
-- **Coin Input Loop**: Continuously prompts the user to enter a coin value until they enter `0` to exit.
-  - `scanf("%d", &coin)`: Reads the coin value from the user.
-  - If the coin value is `0`, the loop breaks, ending the program.
-- **Function Call**: Calls `vending_machine` with the current state, coin input, and pointers to the output signals.
-- **Output Display**: Prints the current state and output signals after each coin input.
 
-### Summary
-This C program simulates a simple vending machine using a state machine approach. It transitions between different states based on coin inputs and sets output signals to indicate product dispensation and change return, mimicking the behavior of the provided Verilog module.
-
-
+- If the coin value is `0`, the loop breaks, ending the program.
 
 
 
