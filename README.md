@@ -191,7 +191,7 @@ We have now understood the functionality of Vending Machine, the next task is to
 
 The C program of vending machine is given below,
 
-
+------------------------------------------------------------------------------------------------------------------------------------------
 #include <stdio.h>
 
 // Define states
@@ -268,7 +268,100 @@ int main() {
 
 
 
+##### Explanation to code:
 
+- State Definition
+```c
+typedef enum {
+    S0, S5, S10, S20, S50
+} State;
+```
+- **State Enum**: Defines the possible states of the vending machine using an enumeration. These states correspond to the initial state (`S0`) and states for different coin values (`S5`, `S10`, `S20`, `S50`).
+
+### Vending Machine Function
+```c
+void vending_machine(State *state, int coin, int *nw_pa, int *ret5, int *ret10, int *ret20) {
+    *nw_pa = 0;
+    *ret5 = 0;
+    *ret10 = 0;
+    *ret20 = 0;
+
+    switch (*state) {
+        case S0:
+            if (coin == 1) *state = S5;
+            else if (coin == 2) *state = S10;
+            else if (coin == 3) *state = S20;
+            else if (coin == 4) *state = S50;
+            break;
+        case S5:
+            *nw_pa = 1;
+            if (coin == 2) *ret5 = 1;
+            else if (coin == 3) {
+                *ret5 = 1;
+                *ret10 = 1;
+            } else if (coin == 4) {
+                *ret5 = 1;
+                *ret20 = 1;
+            }
+            break;
+        case S10:
+            *nw_pa = 1;
+            if (coin == 3) *ret10 = 1;
+            break;
+        case S20:
+            *nw_pa = 1;
+            break;
+        case S50:
+            *nw_pa = 1;
+            if (coin == 4) *ret20 = 1;
+            break;
+        default:
+            *state = S0;
+            break;
+    }
+}
+```
+- **Function Purpose**: The `vending_machine` function updates the state of the vending machine and sets the output signals (`nw_pa`, `ret5`, `ret10`, `ret20`) based on the current state and coin input.
+- **Parameter Explanation**:
+  - `state`: Pointer to the current state of the vending machine.
+  - `coin`: The value of the inserted coin (1 for 5, 2 for 10, 3 for 20, 4 for 50).
+  - `nw_pa`, `ret5`, `ret10`, `ret20`: Pointers to the output signals.
+- **State Transitions**:
+  - In each case block, the function checks the coin value and updates the state accordingly.
+  - Depending on the state, it may also set the output signals to indicate if a product is dispensed (`nw_pa`) or if change is returned (`ret5`, `ret10`, `ret20`).
+
+### Main Function
+```c
+int main() {
+    State state = S0;
+    int coin;
+    int nw_pa = 0, ret5 = 0, ret10 = 0, ret20 = 0;
+
+    while (1) {
+        printf("Enter coin value (1: 5, 2: 10, 3: 20, 4: 50, 0 to exit): ");
+        scanf("%d", &coin);
+
+        if (coin == 0) {
+            break;
+        }
+
+        vending_machine(&state, coin, &nw_pa, &ret5, &ret10, &ret20);
+
+        printf("State: %d, nw_pa: %d, ret5: %d, ret10: %d, ret20: %d\n", state, nw_pa, ret5, ret10, ret20);
+    }
+
+    return 0;
+}
+```
+- **State Initialization**: Initializes the state to `S0` (initial state).
+- **Coin Input Loop**: Continuously prompts the user to enter a coin value until they enter `0` to exit.
+  - `scanf("%d", &coin)`: Reads the coin value from the user.
+  - If the coin value is `0`, the loop breaks, ending the program.
+- **Function Call**: Calls `vending_machine` with the current state, coin input, and pointers to the output signals.
+- **Output Display**: Prints the current state and output signals after each coin input.
+
+### Summary
+This C program simulates a simple vending machine using a state machine approach. It transitions between different states based on coin inputs and sets output signals to indicate product dispensation and change return, mimicking the behavior of the provided Verilog module.
 
 
 
