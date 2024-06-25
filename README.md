@@ -2,7 +2,7 @@
 An internship on RISC-V and VLSI using VSDSquadron Mini Board provided by Kunal Gosh in VLSI System Design (VSD).
 
 <details>
-<summary> **Overview of the internship**</summary>
+<summary> Overview of the internship</summary>
 
 
 The internship is about the two main key take aways:
@@ -135,7 +135,7 @@ Save the file in the editor
 </details>
 
 <details>
- <summary>**Task 2**</summary>
+ <summary> Task 2</summary>
 #### Change Dispense Wizard: Engineering a Vending Machine with Advanced Change System
 
 Task 2 is about writing the c program for the selected project along with compiling and runing with gcc command. But, before that Let us first take a look on Vending Machine and it's functunality.
