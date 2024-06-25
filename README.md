@@ -141,88 +141,72 @@ Save the file in the editor
 
 
 
+#include <stdio.h>
 
+// Define states
+typedef enum {
+    S0, S5, S10, S20, S50
+} State;
 
+// Function to handle state transitions and actions
+void vending_machine(State *state, int coin, int *nw_pa, int *ret5, int *ret10, int *ret20) {
+    *nw_pa = 0;
+    *ret5 = 0;
+    *ret10 = 0;
+    *ret20 = 0;
 
+    switch (*state) {
+        case S0:
+            if (coin == 1) *state = S5;
+            else if (coin == 2) *state = S10;
+            else if (coin == 3) *state = S20;
+            else if (coin == 4) *state = S50;
+            break;
+        case S5:
+            *nw_pa = 1;
+            if (coin == 2) *ret5 = 1;
+            else if (coin == 3) {
+                *ret5 = 1;
+                *ret10 = 1;
+            } else if (coin == 4) {
+                *ret5 = 1;
+                *ret20 = 1;
+            }
+            break;
+        case S10:
+            *nw_pa = 1;
+            if (coin == 3) *ret10 = 1;
+            break;
+        case S20:
+            *nw_pa = 1;
+            break;
+        case S50:
+            *nw_pa = 1;
+            if (coin == 4) *ret20 = 1;
+            break;
+        default:
+            *state = S0;
+            break;
+    }
+}
 
+int main() {
+    State state = S0;
+    int coin;
+    int nw_pa = 0, ret5 = 0, ret10 = 0, ret20 = 0;
 
+    while (1) {
+        printf("Enter coin value (1: 5, 2: 10, 3: 20, 4: 50, 0 to exit): ");
+        scanf("%d", &coin);
 
+        if (coin == 0) {
+            break;
+        }
 
+        vending_machine(&state, coin, &nw_pa, &ret5, &ret10, &ret20);
 
+        printf("State: %d, nw_pa: %d, ret5: %d, ret10: %d, ret20: %d\n", state, nw_pa, ret5, ret10, ret20);
+    }
 
-
-module vending_machine_verilog (
-    input [2:0] coin,
-    input clk, rst,
-    output reg nw_pa,
-    output reg ret5,
-    output reg ret10,
-    output reg ret20
-);
-
-    reg [2:0] state;
-    reg [2:0] next_state;
-
-    parameter [2:0] s0 = 3'b000;
-    parameter [2:0] s5 = 3'b001;
-    parameter [2:0] s10 = 3'b010;
-    parameter [2:0] s20 = 3'b011;
-    parameter [2:0] s50 = 3'b100;
-
-    always @(posedge clk or posedge rst) begin
-        if (rst) begin
-            state <= s0;
-            nw_pa <= 1'b0;
-            ret5 <= 1'b0;
-            ret10 <= 1'b0;
-            ret20 <= 1'b0;
-        end else begin
-            state <= next_state;
-        end
-    end
-
-    always @(*) begin
-        next_state = state;
-        nw_pa = 1'b0;
-        ret5 = 1'b0;
-        ret10 = 1'b0;
-        ret20 = 1'b0;
-
-        case (state)
-            s0: begin
-                if (coin == 3'b001) next_state = s5;
-                else if (coin == 3'b010) next_state = s10;
-                else if (coin == 3'b011) next_state = s20;
-                else if (coin == 3'b100) next_state = s50;
-            end
-            s5: begin
-                nw_pa = 1'b1;
-                if (coin == 3'b010) ret5 = 1'b1;
-                else if (coin == 3'b011) begin
-                    ret5 = 1'b1;
-                    ret10 = 1'b1;
-                end else if (coin == 3'b100) begin
-                    ret5 = 1'b1;
-                    ret20 = 1'b1;
-                end
-            end
-            s10: begin
-                nw_pa = 1'b1;
-                if (coin == 3'b011) ret10 = 1'b1;
-            end
-            s20: begin
-                nw_pa = 1'b1;
-            end
-            s50: begin
-                nw_pa = 1'b1;
-                if (coin == 3'b100) begin
-                    ret20 = 1'b1;
-                end
-            end
-            default: next_state = s0;
-        endcase
-    end
-
-endmodule
-
-
+    return 0;
+}
