@@ -130,9 +130,6 @@ Save the file in the editor
 
 
 
-==========================================
-
-
 ## Task 2
 #### Change Dispense Wizard: Engineering a Vending Machine with Advanced Change System
 
