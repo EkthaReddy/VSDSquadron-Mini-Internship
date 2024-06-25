@@ -133,5 +133,8 @@ Save the file in the editor
 
 
 
+![code for vending machine](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/12105c6e-1daf-485e-8c4f-49bfb560dea5)
 
+![code for vending machine continuation](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/c8823779-2de2-41ae-ba8c-ee60c9d0133b)
+![vending machine result](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/33777a94-816d-48ca-82cc-0dbd50e50cb1)
 
