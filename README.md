@@ -146,7 +146,8 @@ A vending machine is a large self-service, often box-like device that sells smal
 
 This is what a vending machine looks like and we often find them at places like airport, metro stations or amusement parks.
 
-### Project : Functions of my Vending Machine 
+### Project : Vending Machine Functionality in my project
+
 #### What does it do?
 
 We now know that, vending machine sells the desired goods when the coins are inserted,
@@ -164,7 +165,47 @@ Now, we will look on each specific case with it's function to be performed.
 
 Firstly, we have an idle state which shows no transaction that means the coins are not inserted yet. So, the change of goods will not happen. However, 
 in case 1, the 5 ruppee coin is inserted to purchase five ruppee item, that means no coin will be returned and good is being purchased. Although,
-five ruppee coin will be returned back in case 2 when the 10 ruppee coin is inserted and it will also mention that the good is being purchased. Likewise,
-in case 3, the 20 ruppee coin is inserted which return back five ruppee coin and ten ruppee coin along with an indication that good is being purchased. Same way,
-when 50 ruppee coin is inserted in case 4, five ruppee coin and twenty ruppee coin will be returned back and good is being purchased.
+five ruppee coin will be returned back in case 2 when the 10 ruppee coin is inserted and it will also mention that the good is sold out. Likewise,
+in case 3, the 20 ruppee coin is inserted which return back five ruppee coin and ten ruppee coin along with an indication that item is purchased. Same way,
+when 50 ruppee coin is inserted in case 4, five ruppee coin and twenty ruppee coin will be returned back.
+
+#### What is new in this project?
+
+Earlier, most of the vending machine do not give the change when purchased a good and in some cases the items will not be dispenced as the extra money is inserted which makes the machines unable to identify it.
+
+So, in this project of Vending Machine, the change will be return back when purchased by the customer with extra money. The 5, 10 and 20 rupppee coins are used to pay back the customer when inserted the coins. 
+This method is beneficial in India, as the foods which is being sold in market are having range of products to purchase from simple five ruppee to more than hundred, and sometimes the store can get a little crowdy to buy just a 20 ruppee edibles. 
+
+Therefore, the change mechanism system is introduced in vending machine for faster transaction. Which works in series of steps.
+
+Firstly, when a customer inserts money into the machine, the coin mechanism validates the coins or notes. Accepted coins are directed to a storage area.
+then the machine calculates the total amount inserted and compares it with the cost of the selected item.
+If the amount inserted exceeds the item’s cost, the machine calculates the required change.
+and at last the machine then dispenses the change using coins stored in its coin dispenser.
+As a result, the project introduces the change despense mechanism for faster, reliable and convient purchase without the interaction with store keeper.
+
+
+### C code for Vending Machine
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
