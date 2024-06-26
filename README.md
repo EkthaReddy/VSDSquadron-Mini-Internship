@@ -375,6 +375,12 @@ The output shows the state transitions and actions of the vending machine based 
 
 ## Task 3
 
+In this task, we have to perform Spike Simulation and observe with (`-o1`) and (`-ofast`) command.
+
+Before that, the output we got from the `gcc` command should be equal to the spike simulation.
+
+
+At first, we will verify the code for `-o1` 
 -o1 command
 
 
