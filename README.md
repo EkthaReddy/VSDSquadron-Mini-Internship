@@ -408,7 +408,7 @@ Hence, the verification for command `-o1` is done.
 
 ![verification for spike for o1 command](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/8298625e-68ea-4ac4-bf77-c43664ba96ed)
 
-#### Debugging the RISC-V Processor for `-o1` using Spike simulation :
+##### Debugging the RISC-V Processor for `-o1` using Spike simulation :
 
 Now we will debugg the assembly code instruction we got from from ` riscv64-unknown-elf-objdump -d vending_machine.o | less `
 
@@ -442,7 +442,7 @@ Hence it is verified and debugged now.
 
 ![cotinue debugging o1](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/fa44ce12-9549-44ea-bfba-d137c3faaab9)
 
-### With `-ofast` command :
+#### With `-ofast` command :
 
 ##### Verification with `-ofast` :
 In the same way, now we have to do for `-ofast` command
@@ -463,7 +463,7 @@ Step 3: Now, we have to run the compiled C code for RISC-V processor.
 
 By using the command ` riscv64-unknown-elf-objdump -d vending_machine.o | less `, it will give the assembly code instruction.
 
-#### Debugging the RISC-V Processor for `-ofast` using Spike simulation :
+##### Debugging the RISC-V Processor for `-ofast` using Spike simulation :
 
 The starting address of the assembly code is `100b0`, with help of program counter, we can see the next instruction manually by performing debugging.
 
