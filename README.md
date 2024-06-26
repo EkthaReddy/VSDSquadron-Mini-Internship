@@ -377,20 +377,45 @@ The output shows the state transitions and actions of the vending machine based 
 
 In this task, we have to perform Spike Simulation and observe with (`-o1`) and (`-ofast`) command.
 
-Before that, the output we got from the `gcc` command should be equal to the spike simulation.
+At first, we will verify the code for `-o1` , to do that, the output we got from the `gcc` command should be equal to the spike simulation.
 
+This command ` riscv64-unknown-elf-gcc -o1 -mabi=lp64 -march=rv64i -o vending_machine.o vending_machine.c` will run the C code to give the output in C by using `./a.out` and for RISC-V processor we must use `spike pk vending_machine`
 
-At first, we will verify the code for `-o1` 
--o1 command
-
-
-
+The output got from `gcc` is for state `2` for 10 ruppee coin and the if press `0` it get exited. The same way the output got from `spike` is `2` for state 2 which represent the 10 ruppee coin, and by pressing 0 it terminated for next command line instruction to be performed.
 
 
 
+Hence, the verification for command `-o1` is done.
 
 
 ![verification for spike for o1 command](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/8298625e-68ea-4ac4-bf77-c43664ba96ed)
+
+
+Now we will debugg the assembly code instruction we got from from `ricv64-unknown-elf-objdump -d vending | less`]
+
+![cotinue debugging o1](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/fa44ce12-9549-44ea-bfba-d137c3faaab9)
+
+In this, we will debugg by using the instruction `spike -d pk vending_machine` 
+which will allow us to spike any instruction we want.
+
+Now, we spike for the initial address we see on the assembly code `100b0` so that we can see starting address to any point manually by using program counter
+
+To do so, `until pc 0 100b0`, this means that it will debugg all the instruction after 100b0 and also shows the previous instructions to `100b0` is already being debugged. 
+
+Type for `reg 0 a2`, it will show the register value at zero core for a2 operand.
+
+To see next instruction, press `Enter` and it will show the starting address and if pressed again it will go to `100b4` which is the next instruction.
+
+`reg 0 sp` shows the stack pointer of the instruction of 100b4
+
+and if we want to see the next instruction(`100b8`) stack pointer just subtract the value we got from `reg 0 sp` of `100b4` from `16` as it is a hexadecimal value. It will give the `100b8` instruction stack pointer.
+
+
+We can verify it by using `until pc 0 100b8` the program counter poites at instruction `100b8`, before that quit from the previous operation by pressing `q`.
+
+Type `reg 0 sp`
+
+Hence it is verified and debugged now.
 ![debugging for o1](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/85ba39df-3da9-4029-92d0-16546e5233f8)
 ![continue o1 debugging](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/baf0e1d6-862a-4fba-acc7-5cf293bd3838)
 ![continue o1](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/1abe08ab-89e4-4550-b763-ccba5e638a5a)
@@ -398,7 +423,6 @@ At first, we will verify the code for `-o1`
 
 
 
-![cotinue debugging o1](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/fa44ce12-9549-44ea-bfba-d137c3faaab9)
 
 
 
