@@ -393,7 +393,7 @@ Hence, the verification for command `-o1` is done.
 
 Now we will debugg the assembly code instruction we got from from `ricv64-unknown-elf-objdump -d vending | less`]
 
-![cotinue debugging o1](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/fa44ce12-9549-44ea-bfba-d137c3faaab9)
+![assembly code vending machine](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/c0092cc5-6ad2-49b1-b823-5f45e30027d9)
 
 In this, we will debugg by using the instruction `spike -d pk vending_machine` 
 which will allow us to spike any instruction we want.
@@ -421,16 +421,13 @@ Hence it is verified and debugged now.
 ![continue o1](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/1abe08ab-89e4-4550-b763-ccba5e638a5a)
 
 
+![cotinue debugging o1](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/fa44ce12-9549-44ea-bfba-d137c3faaab9)
 
 
 
 
 
-
-
--ofast command
-
-
+In the same way, now we have to do for `-ofast` command
 
 ![spike command for verification](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/a3b66d97-c636-4926-9313-69b3a14bd17e)
 ![debugging the spike](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/8d29cefb-2686-4810-8b35-0604461f78f4)
@@ -453,5 +450,4 @@ Hence it is verified and debugged now.
 
 
 ![knowing the difference by using  stack pointer](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/02085887-fdb8-4419-8ed1-028aeb3b8569)
-![assembly code vending machine](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/c0092cc5-6ad2-49b1-b823-5f45e30027d9)
 
