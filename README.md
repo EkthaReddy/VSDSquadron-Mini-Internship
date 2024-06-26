@@ -1,7 +1,8 @@
 # VSDSquadron-Mini-Internship
 An internship on RISC-V and VLSI using VSDSquadron Mini Board provided by Kunal Gosh in VLSI System Design (VSD).
 
-## Overview of the internship
+<details>
+<summary><h3>Overview of the internship</h3></summary>
 
 
 The internship is about the two main key take aways:
@@ -35,7 +36,11 @@ Therefore, this part explains the,
 And in the final step the output from chip design and RTL Architecture must be equal to show that the desired output from models are achieved.
 </details>
 
-## Task 1
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<details>
+
+<summary><h3>Task 1</h3></summary>
 
 The task 1 of the internship includes the following
 - Installation of RISC-V toolchain using VDI.
@@ -130,11 +135,15 @@ Save the file in the editor
 
 ![main section of assembly code](https://github.com/EkthaReddy/vsdsquadron-mini-internship/assets/152515939/053a0a17-79c8-48af-8227-f59f7dd6786e)
 
+</details>
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-## Task 2
+<details>
+
+<summary><h3>Task 2</h3></summary>
  
-### Change Dispense Wizard: Engineering a Vending Machine with Advanced Change System
+**Change Dispense Wizard: Engineering a Vending Machine with Advanced Change System**
 
 Task 2 is about writing the c program for the selected project along with compiling and runing with gcc command. But, before that Let us first take a look on Vending Machine and it's functunality.
 
@@ -372,8 +381,13 @@ To check the output of  C code, run the code by using (`./a.out`).
 **Explanation to output**:
 The output shows the state transitions and actions of the vending machine based on coin inputs. Each entry updates the state and outputs whether a product is dispensed (`nw_pa = 1`) and if any change is returned (`ret5`, `ret10`, `ret20`). The session ends when `0` is inputted.
 
+</details>
 
-## Task 3
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<details>
+
+<summary><h3>Task 3</h3></summary>
 
 In this task, we have to perform Spike Simulation and observe with (`-o1`) and (`-ofast`) command.
 
@@ -468,7 +482,11 @@ Step 7: To check the next instruction manually, calculate by subtracting the sta
 ![knowing the difference by using  stack pointer](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/02085887-fdb8-4419-8ed1-028aeb3b8569)
 
 
-**Objective of Task 2:** 
+**Objective of Task 3:** 
 The task 2 was to perform the spike simulation for,
 - Verifying the C code and RISC-V Processor compilation.
 - Debugg the RISC-V Processor using the spike simulation.
+
+</details>
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
