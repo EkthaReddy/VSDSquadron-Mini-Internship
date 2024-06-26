@@ -379,7 +379,7 @@ In this task, we have to perform Spike Simulation and observe with (`-o1`) and (
 
 At first, we will verify the code for `-o1` , to do that, the output we got from the `gcc` command should be equal to the spike simulation.
 
-This command ` riscv64-unknown-elf-gcc -o1 -mabi=lp64 -march=rv64i -o vending_machine.o vending_machine.c` will run the C code to give the output in C by using `./a.out` and for RISC-V processor we must use `spike pk vending_machine`
+This command ` riscv64-unknown-elf-gcc -o1 -mabi=lp64 -march=rv64i -o vending_machine.o vending_machine.c ` will run the C code to give the output in C by using `./a.out` and for RISC-V processor we must use `spike pk vending_machine`
 
 The output got from `gcc` is for state `2` for 10 ruppee coin and the if press `0` it get exited. The same way the output got from `spike` is `2` for state 2 which represent the 10 ruppee coin, and by pressing 0 it terminated for next command line instruction to be performed.
 
@@ -391,7 +391,7 @@ Hence, the verification for command `-o1` is done.
 ![verification for spike for o1 command](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/8298625e-68ea-4ac4-bf77-c43664ba96ed)
 
 
-Now we will debugg the assembly code instruction we got from from `ricv64-unknown-elf-objdump -d vending | less`]
+Now we will debugg the assembly code instruction we got from from ` riscv64-unknown-elf-objdump -d vending_machine.o | less `
 
 ![assembly code vending machine](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/c0092cc5-6ad2-49b1-b823-5f45e30027d9)
 
@@ -416,38 +416,57 @@ We can verify it by using `until pc 0 100b8` the program counter poites at instr
 Type `reg 0 sp`
 
 Hence it is verified and debugged now.
-![debugging for o1](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/85ba39df-3da9-4029-92d0-16546e5233f8)
-![continue o1 debugging](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/baf0e1d6-862a-4fba-acc7-5cf293bd3838)
-![continue o1](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/1abe08ab-89e4-4550-b763-ccba5e638a5a)
 
+![debugging for o1](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/85ba39df-3da9-4029-92d0-16546e5233f8)
+
+![continue o1](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/1abe08ab-89e4-4550-b763-ccba5e638a5a)
 
 ![cotinue debugging o1](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/fa44ce12-9549-44ea-bfba-d137c3faaab9)
 
 
-
-
-
 In the same way, now we have to do for `-ofast` command
 
+Step 1: C Code compilation using command ` riscv64-unknown-elf-gcc -ofast -mabi=lp64 -march=rv64i -o vending_machine.o vending_machine.c `.
+Check the output by running `gcc file_name` which is `gcc vending_machine.c`
+The output can be verified by using `./a.out`
+
+Step 2: RISC-V Processor compilation is by using again ` riscv64-unknown-elf-gcc -ofast -mabi=lp64 -march=rv64i -o vending_machine.o vending_machine.c `.
+Check and verified the output by `spike pk vending_machine.o`.
+
+- Note: If the ouput from Step 1 and Step 2 is matched, then the verification with `-ofast` is over.
+
 ![spike command for verification](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/a3b66d97-c636-4926-9313-69b3a14bd17e)
+
+
+Step 3: Now, we have to run the compiled C code for RISC-V processor.
+By using the command ` riscv64-unknown-elf-objdump -d vending_machine.o | less `, it will give the assembly code instruction.
+
+The starting address of the assembly code is `100b0`, with help of program counter, we can see the next instruction manually by performing debugging.
+
+![assembly code vending machine](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/c0092cc5-6ad2-49b1-b823-5f45e30027d9)
+
+
+Step 4: We have to debugg the RISC-V Processor by using command `spike -d pk vending_machine.o`.
+
+Step 5: Use `until pc0 100b0` , it says that it will debugg all the instructions after 100b0 and the previous instructions are already debugged.
+
+Step 6: To see the next instruction.
+
+- `reg 0 a2` it will define the register value at zero core for a2 operand.
+- Hit `Enter` to get the first instruction, after that give command ` reg 0 a0` followed by ` reg 0 sp`.
+- Quit the operation by giving `q`
+- To check the next instruction, give `until pc 0 100b8` for debugging the instruction `100b8` and type `reg 0 sp` for getting the stack pointer value.
+
+Step 7: To check the next instruction manually, calculate by subtracting the stack pointer value with `16` to see the next instruction sp.
+
 ![debugging the spike](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/8d29cefb-2686-4810-8b35-0604461f78f4)
+
 ![continue debugging](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/0a021676-be5a-4687-892d-125475f01ee2)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ![knowing the difference by using  stack pointer](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/02085887-fdb8-4419-8ed1-028aeb3b8569)
 
+
+**Objective of Task 2:** 
+The task 2 was to perform the spike simulation for,
+- Verifying the C code and RISC-V Processor compilation.
+- Debugg the RISC-V Processor using the spike simulation.
