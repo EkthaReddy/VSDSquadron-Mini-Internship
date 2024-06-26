@@ -377,6 +377,8 @@ The output shows the state transitions and actions of the vending machine based 
 
 In this task, we have to perform Spike Simulation and observe with (`-o1`) and (`-ofast`) command.
 
+**With `-o1` command :**
+
 At first, we will verify the code for `-o1` , to do that, the output we got from the `gcc` command should be equal to the spike simulation.
 
 This command ` riscv64-unknown-elf-gcc -o1 -mabi=lp64 -march=rv64i -o vending_machine.o vending_machine.c ` will run the C code to give the output in C by using `./a.out` and for RISC-V processor we must use `spike pk vending_machine`
@@ -423,7 +425,7 @@ Hence it is verified and debugged now.
 
 ![cotinue debugging o1](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/fa44ce12-9549-44ea-bfba-d137c3faaab9)
 
-
+**With `-ofast` command :**
 In the same way, now we have to do for `-ofast` command
 
 Step 1: C Code compilation using command ` riscv64-unknown-elf-gcc -ofast -mabi=lp64 -march=rv64i -o vending_machine.o vending_machine.c `.
