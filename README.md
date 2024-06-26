@@ -40,7 +40,7 @@ And in the final step the output from chip design and RTL Architecture must be e
 
 <details>
 
-<summary><h3>Task 1</h3></summary>
+<summary><h3>Task 1: </h3> Installation of RISC-V toolchain using VDI. Uploading the snapshot of compiled C code and RISC-V Objdmp on the GitHub repo</summary>
 
 The task 1 of the internship includes the following
 - Installation of RISC-V toolchain using VDI.
@@ -141,7 +141,7 @@ Save the file in the editor
 
 <details>
 
-<summary><h3>Task 2</h3></summary>
+<summary><h3>Task 2: </h3> Write a C program for your project and compile with RISC-V GCC</summary>
  
 **Change Dispense Wizard: Engineering a Vending Machine with Advanced Change System**
 
@@ -387,11 +387,13 @@ The output shows the state transitions and actions of the vending machine based 
 
 <details>
 
-<summary><h3>Task 3</h3></summary>
+<summary><h3>Task 3: </h3> Do SPIKE Simulation and verification with -O1 and -Ofast along with running the RISC-V Objdmp. </summary>
 
 In this task, we have to perform Spike Simulation and observe with (`-o1`) and (`-ofast`) command.
 
-**With `-o1` command :**
+### With `-o1` command :
+
+#### Verification with `-o1`:
 
 At first, we will verify the code for `-o1` , to do that, the output we got from the `gcc` command should be equal to the spike simulation.
 
@@ -406,6 +408,7 @@ Hence, the verification for command `-o1` is done.
 
 ![verification for spike for o1 command](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/8298625e-68ea-4ac4-bf77-c43664ba96ed)
 
+#### Debugging the RISC-V Processor for `-o1` using Spike simulation :
 
 Now we will debugg the assembly code instruction we got from from ` riscv64-unknown-elf-objdump -d vending_machine.o | less `
 
@@ -439,7 +442,9 @@ Hence it is verified and debugged now.
 
 ![cotinue debugging o1](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/fa44ce12-9549-44ea-bfba-d137c3faaab9)
 
-**With `-ofast` command :**
+## With `-ofast` command :
+
+#### Verification with `-ofast` :
 In the same way, now we have to do for `-ofast` command
 
 Step 1: C Code compilation using command ` riscv64-unknown-elf-gcc -ofast -mabi=lp64 -march=rv64i -o vending_machine.o vending_machine.c `.
@@ -457,10 +462,11 @@ Check and verified the output by `spike pk vending_machine.o`.
 Step 3: Now, we have to run the compiled C code for RISC-V processor.
 By using the command ` riscv64-unknown-elf-objdump -d vending_machine.o | less `, it will give the assembly code instruction.
 
+#### Debugging the RISC-V Processor for `-ofast` using Spike simulation :
+
 The starting address of the assembly code is `100b0`, with help of program counter, we can see the next instruction manually by performing debugging.
 
 ![assembly code vending machine](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/c0092cc5-6ad2-49b1-b823-5f45e30027d9)
-
 
 Step 4: We have to debugg the RISC-V Processor by using command `spike -d pk vending_machine.o`.
 
