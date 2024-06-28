@@ -148,7 +148,7 @@ Save the file in the editor
 Task 2 is about writing the c program for the selected project along with compiling and runing with gcc command. But, before that Let us first take a look on Vending Machine and it's functunality.
 
 
-### What is Vending Machine?
+#### What is Vending Machine?
 
 A vending machine is a large self-service, often box-like device that sells small items like snacks, drinks, or other goods. You put money or a credit card into the machine, choose what you want to buy by pressing a button or touchscreen, and then the machine gives you the item you selected. It’s a convenient way to buy things quickly without needing to go to a store or interact with a cashier.
 
@@ -156,9 +156,9 @@ A vending machine is a large self-service, often box-like device that sells smal
 
 This is what a vending machine looks like and we often find them at places like airport, metro stations or amusement parks.
 
-### Project : Vending Machine Functionality in my project
+#### Project : Vending Machine Functionality in my project
 
-#### What does it do?
+##### What does it do?
 
 We now know that, vending machine sells the desired goods when the coins are inserted,
 In this project we will be using 5, 10, 20 and 50 ruppee coins to purchase a five ruppee product.
@@ -179,7 +179,7 @@ five ruppee coin will be returned back in case 2 when the 10 ruppee coin is inse
 in case 3, the 20 ruppee coin is inserted which return back five ruppee coin and ten ruppee coin along with an indication that item is purchased. Same way,
 when 50 ruppee coin is inserted in case 4, five ruppee coin and twenty ruppee coin will be returned back.
 
-#### What is new in this project?
+##### What is new in this project?
 
 Earlier, most of the vending machine do not give the change when purchased a good and in some cases the items will not be dispenced as the extra money is inserted which makes the machines unable to identify it.
 
@@ -195,7 +195,7 @@ and at last the machine then dispenses the change using coins stored in its coin
 As a result, the project introduces the change despense mechanism for faster, reliable and convient purchase without the interaction with store keeper.
 
 
-### C code for Vending Machine
+#### C code for Vending Machine
 
 We have now understood the functionality of Vending Machine, the next task is to write the C program for the project in VirtualBox Terminal.
 
@@ -368,7 +368,7 @@ int main() {
 - If the coin value is `0`, the loop breaks, ending the program.
 
 
-### Compiling the C code with RISC-V gcc
+#### Compiling the C code with RISC-V gcc
 
 In the last step of task 2, the code written in leafpad ediotr will be checked for any errors by using the command line (`gcc file_name`). Therefore, for my project I have used (`gcc vending_machine`) and if the code is right, then give command (`ls -ltr`) for compiling the code in RISC-V. 
 
