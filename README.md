@@ -505,7 +505,7 @@ The task 2 was to perform the spike simulation for,
 <summary><h3>Task 4 : </h3> RISC-V Instruction Formats and 32-bit Patterns</summary>
 
 
-Reffered ChatGPT for extra information that is presented in this task.
+Reffered ChatGPT in the task 4 as an extra resource.
 
 #### Introduction to RISC-V
 RISC-V is an open-source instruction set architecture (ISA) based on reduced instruction set computer (RISC) principles. It allows for the development of processors without requiring a license, making it a popular choice for custom and academic use. RISC-V instructions are organized into several formats, each suited for different types of operations.
