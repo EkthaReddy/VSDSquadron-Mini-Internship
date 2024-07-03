@@ -604,11 +604,11 @@ RISC-V uses six main instruction formats: R, I, S, B, U, and J. Each format has 
 
 ---
 
-#### Instructions and Their Formats with Examples
+#### Instructions and Their Formats
 
 1. **ADD r1, r2, r3**
    - **Type**: R
-   - **Operation**: Adds the contents of registers r2 and r3, and stores the result in register r1.
+   - **Operation**: Performs the addition of the contents of registers r2 and r3 and stores the result in register r1.
    - **Format**:
      ```
      func7   rs2    rs1    func3  rd     opcode
@@ -616,15 +616,31 @@ RISC-V uses six main instruction formats: R, I, S, B, U, and J. Each format has 
      ```
    - **32-bit Instruction**: `0000000_00011_00010_000_00001_0110011`
 
+     **Explanation**: 
+     - **func7**: 7-bit function code. For ADD, it is `0000000`.
+     - **rs2**: 5-bit source register 2. Here it is r3 (register 3) represented as `00011`.
+     - **rs1**: 5-bit source register 1. Here it is r2 (register 2) represented as `00010`.
+     - **func3**: 3-bit function code. For ADD, it is `000`.
+     - **rd**: 5-bit destination register. Here it is r1 (register 1) represented as `00001`.
+     - **opcode**: 7-bit opcode for the R-type format. For arithmetic operations, it is `0110011`.
+
 2. **SUB r3, r1, r2**
    - **Type**: R
-   - **Operation**: Subtracts the contents of register r2 from register r1, and stores the result in register r3.
+   - **Operation**: Subtracts the contents of register r2 from register r1 and stores the result in register r3.
    - **Format**:
      ```
      func7   rs2    rs1    func3  rd     opcode
      0100000 00010  00001  000    00011  0110011
      ```
    - **32-bit Instruction**: `0100000_00010_00001_000_00011_0110011`
+
+     **Explanation**: 
+     - **func7**: 7-bit function code. For SUB, it is `0100000`.
+     - **rs2**: 5-bit source register 2. Here it is r2 (register 2) represented as `00010`.
+     - **rs1**: 5-bit source register 1. Here it is r1 (register 1) represented as `00001`.
+     - **func3**: 3-bit function code. For SUB, it is `000`.
+     - **rd**: 5-bit destination register. Here it is r3 (register 3) represented as `00011`.
+     - **opcode**: 7-bit opcode for the R-type format. For arithmetic operations, it is `0110011`.
 
 3. **AND r2, r1, r3**
    - **Type**: R
@@ -636,6 +652,14 @@ RISC-V uses six main instruction formats: R, I, S, B, U, and J. Each format has 
      ```
    - **32-bit Instruction**: `0000000_00011_00001_111_00010_0110011`
 
+     **Explanation**: 
+     - **func7**: 7-bit function code. For AND, it is `0000000`.
+     - **rs2**: 5-bit source register 2. Here it is r3 (register 3) represented as `00011`.
+     - **rs1**: 5-bit source register 1. Here it is r1 (register 1) represented as `00001`.
+     - **func3**: 3-bit function code. For AND, it is `111`.
+     - **rd**: 5-bit destination register. Here it is r2 (register 2) represented as `00010`.
+     - **opcode**: 7-bit opcode for the R-type format. For logical operations, it is `0110011`.
+
 4. **OR r8, r2, r5**
    - **Type**: R
    - **Operation**: Performs a bitwise OR between the contents of registers r2 and r5, and stores the result in register r8.
@@ -645,6 +669,14 @@ RISC-V uses six main instruction formats: R, I, S, B, U, and J. Each format has 
      0000000 00101  00010  110    01000  0110011
      ```
    - **32-bit Instruction**: `0000000_00101_00010_110_01000_0110011`
+
+     **Explanation**: 
+     - **func7**: 7-bit function code. For OR, it is `0000000`.
+     - **rs2**: 5-bit source register 2. Here it is r5 (register 5) represented as `00101`.
+     - **rs1**: 5-bit source register 1. Here it is r2 (register 2) represented as `00010`.
+     - **func3**: 3-bit function code. For OR, it is `110`.
+     - **rd**: 5-bit destination register. Here it is r8 (register 8) represented as `01000`.
+     - **opcode**: 7-bit opcode for the R-type format. For logical operations, it is `0110011`.
 
 5. **XOR r8, r1, r4**
    - **Type**: R
@@ -656,6 +688,14 @@ RISC-V uses six main instruction formats: R, I, S, B, U, and J. Each format has 
      ```
    - **32-bit Instruction**: `0000000_00100_00001_100_01000_0110011`
 
+     **Explanation**: 
+     - **func7**: 7-bit function code. For XOR, it is `0000000`.
+     - **rs2**: 5-bit source register 2. Here it is r4 (register 4) represented as `00100`.
+     - **rs1**: 5-bit source register 1. Here it is r1 (register 1) represented as `00001`.
+     - **func3**: 3-bit function code. For XOR, it is `100`.
+     - **rd**: 5-bit destination register. Here it is r8 (register 8) represented as `01000`.
+     - **opcode**: 7-bit opcode for the R-type format. For logical operations, it is `0110011`.
+
 6. **SLT r10, r2, r4**
    - **Type**: R
    - **Operation**: Sets register r10 to 1 if the contents of register r2 are less than the contents of register r4, otherwise sets it to 0.
@@ -666,9 +706,19 @@ RISC-V uses six main instruction formats: R, I, S, B, U, and J. Each format has 
      ```
    - **32-bit Instruction**: `0000000_00100_00010_010_01010_0110011`
 
+     **Explanation**: 
+     - **func7**: 7-bit function code. For SLT, it is `0000000`.
+     - **rs2**: 5-bit source register 2. Here it is r4 (register 4) represented as `00100`.
+     - **rs1**: 5-bit
+
+ source register 1. Here it is r2 (register 2) represented as `00010`.
+     - **func3**: 3-bit function code. For SLT, it is `010`.
+     - **rd**: 5-bit destination register. Here it is r10 (register 10) represented as `01010`.
+     - **opcode**: 7-bit opcode for the R-type format. For comparison operations, it is `0110011`.
+
 7. **ADDI r12, r3, 5**
    - **Type**: I
-   - **Operation**: Adds the immediate value 5 to the contents of register r3, and stores the result in register r12.
+   - **Operation**: Adds the immediate value 5 to the contents of register r3 and stores the result in register r12.
    - **Format**:
      ```
      imm[11:0]   rs1    func3  rd     opcode
@@ -676,9 +726,14 @@ RISC-V uses six main instruction formats: R, I, S, B, U, and J. Each format has 
      ```
    - **32-bit Instruction**: `000000000101_00011_000_01100_0010011`
 
-8. **SW r3, r1, 4
+     **Explanation**: 
+     - **imm[11:0]**: 12-bit immediate value. Here it is `000000000101` representing the value 5.
+     - **rs1**: 5-bit source register. Here it is r3 (register 3) represented as `00011`.
+     - **func3**: 3-bit function code. For ADDI, it is `000`.
+     - **rd**: 5-bit destination register. Here it is r12 (register 12) represented as `01100`.
+     - **opcode**: 7-bit opcode for the I-type format. For arithmetic operations with immediate, it is `0010011`.
 
-**
+8. **SW r3, r1, 4**
    - **Type**: S
    - **Operation**: Stores the contents of register r3 into memory at the address calculated by adding 4 to the contents of register r1.
    - **Format**:
@@ -687,6 +742,14 @@ RISC-V uses six main instruction formats: R, I, S, B, U, and J. Each format has 
      0000000    00011 00001  010    00100    0100011
      ```
    - **32-bit Instruction**: `0000000_00011_00001_010_00100_0100011`
+
+     **Explanation**: 
+     - **imm[11:5]**: 7-bit immediate value (upper 7 bits). Here it is `0000000`.
+     - **rs2**: 5-bit source register 2. Here it is r3 (register 3) represented as `00011`.
+     - **rs1**: 5-bit source register 1. Here it is r1 (register 1) represented as `00001`.
+     - **func3**: 3-bit function code. For SW, it is `010`.
+     - **imm[4:0]**: 5-bit immediate value (lower 5 bits). Here it is `00100` representing the value 4.
+     - **opcode**: 7-bit opcode for the S-type format. For store operations, it is `0100011`.
 
 9. **SRL r16, r11, r2**
    - **Type**: R
@@ -698,6 +761,14 @@ RISC-V uses six main instruction formats: R, I, S, B, U, and J. Each format has 
      ```
    - **32-bit Instruction**: `0000000_00010_01011_101_10000_0110011`
 
+     **Explanation**: 
+     - **func7**: 7-bit function code. For SRL, it is `0000000`.
+     - **rs2**: 5-bit source register 2. Here it is r2 (register 2) represented as `00010`.
+     - **rs1**: 5-bit source register 1. Here it is r11 (register 11) represented as `01011`.
+     - **func3**: 3-bit function code. For SRL, it is `101`.
+     - **rd**: 5-bit destination register. Here it is r16 (register 16) represented as `10000`.
+     - **opcode**: 7-bit opcode for the R-type format. For shift operations, it is `0110011`.
+
 10. **BNE r0, r1, 20**
     - **Type**: B
     - **Operation**: Branches to the address offset by 20 if the contents of registers r0 and r1 are not equal.
@@ -707,6 +778,16 @@ RISC-V uses six main instruction formats: R, I, S, B, U, and J. Each format has 
       0       000001     00001 00000  001    0100     0       1100011
       ```
     - **32-bit Instruction**: `0_000001_00001_00000_001_0100_0_1100011`
+
+      **Explanation**: 
+      - **imm[12]**: 1-bit immediate value (bit 12). Here it is `0`.
+      - **imm[10:5]**: 6-bit immediate value (bits 10 to 5). Here it is `000001`.
+      - **rs2**: 5-bit source register 2. Here it is r1 (register 1) represented as `00001`.
+      - **rs1**: 5-bit source register 1. Here it is r0 (register 0) represented as `00000`.
+      - **func3**: 3-bit function code. For BNE, it is `001`.
+      - **imm[4:1]**: 4-bit immediate value (bits 4 to 1). Here it is `0100`.
+      - **imm[11]**: 1-bit immediate value (bit 11). Here it is `0`.
+      - **opcode**: 7-bit opcode for the B-type format. For branch operations, it is `1100011`.
 
 11. **BEQ r0, r0, 15**
     - **Type**: B
@@ -718,6 +799,16 @@ RISC-V uses six main instruction formats: R, I, S, B, U, and J. Each format has 
       ```
     - **32-bit Instruction**: `0_000000_00000_00000_000_1111_0_1100011`
 
+      **Explanation**: 
+      - **imm[12]**: 1-bit immediate value (bit 12). Here it is `0`.
+      - **imm[10:5]**: 6-bit immediate value (bits 10 to 5). Here it is `000000`.
+      - **rs2**: 5-bit source register 2. Here it is r0 (register 0) represented as `00000`.
+      - **rs1**: 5-bit source register 1. Here it is r0 (register 0) represented as `00000`.
+      - **func3**: 3-bit function code. For BEQ, it is `000`.
+      - **imm[4:1]**: 4-bit immediate value (bits 4 to 1). Here it is `1111`.
+      - **imm[11]**: 1-bit immediate value (bit 11). Here it is `0`.
+      - **opcode**: 7-bit opcode for the B-type format. For branch operations, it is `1100011`.
+
 12. **LW r13, r11, 2**
     - **Type**: I
     - **Operation**: Loads the word from memory at the address calculated by adding 2 to the contents of register r11 into register r13.
@@ -728,19 +819,38 @@ RISC-V uses six main instruction formats: R, I, S, B, U, and J. Each format has 
       ```
     - **32-bit Instruction**: `000000000010_01011_010_01101_0000011`
 
-13. **SLL r15, r11, r2**
+      **Explanation**: 
+      - **imm[11:0]**: 12-bit immediate value. Here it is `000000000010` representing the value 2.
+      - **rs1**: 5-bit source register. Here it is r11 (register 11) represented as `01011`.
+      - **func3**: 3-bit function code. For LW, it is `010`.
+      - **rd**: 5-bit destination register. Here it is r13 (register 13) represented as `01101`.
+      - **opcode**: 7-bit opcode for the I-type format. For load operations, it is `0000011`.
+
+13. **SLL r15, r11
+
+, r1**
     - **Type**: R
-    - **Operation**: Performs a logical left shift on the contents of register r11 by the number of bits specified in register r2, and stores the result in register r15.
+    - **Operation**: Performs a logical left shift on the contents of register r11 by the number of bits specified in register r1, and stores the result in register r15.
     - **Format**:
       ```
       func7   rs2    rs1    func3  rd     opcode
-      0000000 00010  01011  001    01111  0110011
+      0000000 00001  01011  001    01111  0110011
       ```
-    - **32-bit Instruction**: `0000000_00010_01011_001_01111_0110011`
+    - **32-bit Instruction**: `0000000_00001_01011_001_01111_0110011`
+
+      **Explanation**: 
+      - **func7**: 7-bit function code. For SLL, it is `0000000`.
+      - **rs2**: 5-bit source register 2. Here it is r1 (register 1) represented as `00001`.
+      - **rs1**: 5-bit source register 1. Here it is r11 (register 11) represented as `01011`.
+      - **func3**: 3-bit function code. For SLL, it is `001`.
+      - **rd**: 5-bit destination register. Here it is r15 (register 15) represented as `01111`.
+      - **opcode**: 7-bit opcode for the R-type format. For shift operations, it is `0110011`.
 
 
 **Summary :**
-These instructions and their corresponding formats provide a clear representation of how RISC-V organizes its operations. The exact 32-bit codes ensure that each instruction is properly encoded for execution in a RISC-V processor. This organized approach is key to the flexibility and efficiency of RISC-V as an open-source ISA.
+
+These instructions and their corresponding formats provide a clear representation of how RISC-V organizes its operations. The exact 32-bit codes ensure that each instruction is properly encoded for execution in a RISC-V processor. 
+
 </details>
 
 
