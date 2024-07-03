@@ -826,9 +826,7 @@ RISC-V uses six main instruction formats: R, I, S, B, U, and J. Each format has 
       - **rd**: 5-bit destination register. Here it is r13 (register 13) represented as `01101`.
       - **opcode**: 7-bit opcode for the I-type format. For load operations, it is `0000011`.
 
-13. **SLL r15, r11
-
-, r1**
+13. **SLL r15, r11, r1**
     - **Type**: R
     - **Operation**: Performs a logical left shift on the contents of register r11 by the number of bits specified in register r1, and stores the result in register r15.
     - **Format**:
