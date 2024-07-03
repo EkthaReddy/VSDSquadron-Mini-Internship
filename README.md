@@ -499,21 +499,22 @@ The task 2 was to perform the spike simulation for,
 </details>
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 <details>
 
-<summary><h3>RISC-V Instruction Formats and 32-bit Patterns</h3></summary>
-
----
+<summary><h3>Task 4 : </h3> RISC-V Instruction Formats and 32-bit Patterns</summary>
 
 #### Introduction to RISC-V
 RISC-V is an open-source instruction set architecture (ISA) based on reduced instruction set computer (RISC) principles. It allows for the development of processors without requiring a license, making it a popular choice for custom and academic use. RISC-V instructions are organized into several formats, each suited for different types of operations.
 
----
+
 
 #### RISC-V Instruction Formats
 RISC-V uses six main instruction formats: R, I, S, B, U, and J. Each format has a specific structure that dictates how the bits in a 32-bit instruction are organized. Here's a breakdown of each format and their subtypes:
 
----
+![image](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/25d9b364-ce19-4fce-9e98-c782d3e577a4)
+
+
 
 1. **R-type (Register) Instructions**
     - **Description**: R-type instructions are used for arithmetic and logical operations where both operands and the result are in registers.
