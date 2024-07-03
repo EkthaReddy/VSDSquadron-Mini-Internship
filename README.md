@@ -738,6 +738,9 @@ RISC-V uses six main instruction formats: R, I, S, B, U, and J. Each format has 
       ```
     - **32-bit Instruction**: `0000000_00010_01011_001_01111_0110011`
 
+
+**Summary :**
+These instructions and their corresponding formats provide a clear representation of how RISC-V organizes its operations. The exact 32-bit codes ensure that each instruction is properly encoded for execution in a RISC-V processor. This organized approach is key to the flexibility and efficiency of RISC-V as an open-source ISA.
 </details>
 
 
