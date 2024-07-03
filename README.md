@@ -499,3 +499,242 @@ The task 2 was to perform the spike simulation for,
 </details>
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<details>
+
+<summary><h3>RISC-V Instruction Formats and 32-bit Patterns</h3></summary>
+
+---
+
+#### Introduction to RISC-V
+RISC-V is an open-source instruction set architecture (ISA) based on reduced instruction set computer (RISC) principles. It allows for the development of processors without requiring a license, making it a popular choice for custom and academic use. RISC-V instructions are organized into several formats, each suited for different types of operations.
+
+---
+
+#### RISC-V Instruction Formats
+RISC-V uses six main instruction formats: R, I, S, B, U, and J. Each format has a specific structure that dictates how the bits in a 32-bit instruction are organized. Here's a breakdown of each format and their subtypes:
+
+---
+
+1. **R-type (Register) Instructions**
+    - **Description**: R-type instructions are used for arithmetic and logical operations where both operands and the result are in registers.
+    - **Structure**:
+        - **func7**: 7 bits (function code)
+        - **rs2**: 5 bits (second source register)
+        - **rs1**: 5 bits (first source register)
+        - **func3**: 3 bits (function code)
+        - **rd**: 5 bits (destination register)
+        - **opcode**: 7 bits (operation code)
+    - **Subtypes and Examples**:
+        - **Arithmetic Operations**: ADD, SUB
+        - **Logical Operations**: AND, OR, XOR
+        - **Shift Operations**: SLL, SRL
+
+---
+
+2. **I-type (Immediate) Instructions**
+    - **Description**: I-type instructions are used for operations that involve an immediate value (constant) and a register. They are also used for load operations.
+    - **Structure**:
+        - **imm[11:0]**: 12 bits (immediate value)
+        - **rs1**: 5 bits (source register)
+        - **func3**: 3 bits (function code)
+        - **rd**: 5 bits (destination register)
+        - **opcode**: 7 bits (operation code)
+    - **Subtypes and Examples**:
+        - **Arithmetic Operations with Immediate**: ADDI
+        - **Load Operations**: LW
+
+---
+
+3. **S-type (Store) Instructions**
+    - **Description**: S-type instructions are used for store operations, where data from a register is stored into memory.
+    - **Structure**:
+        - **imm[11:5]**: 7 bits (immediate value)
+        - **rs2**: 5 bits (source register 2)
+        - **rs1**: 5 bits (source register 1)
+        - **func3**: 3 bits (function code)
+        - **imm[4:0]**: 5 bits (immediate value)
+        - **opcode**: 7 bits (operation code)
+    - **Subtypes and Examples**:
+        - **Store Operations**: SW
+
+---
+
+4. **B-type (Branch) Instructions**
+    - **Description**: B-type instructions are used for conditional branch operations, where the execution flow changes based on a condition.
+    - **Structure**:
+        - **imm[12]**: 1 bit (immediate value)
+        - **imm[10:5]**: 6 bits (immediate value)
+        - **rs2**: 5 bits (second source register)
+        - **rs1**: 5 bits (first source register)
+        - **func3**: 3 bits (function code)
+        - **imm[4:1]**: 4 bits (immediate value)
+        - **imm[11]**: 1 bit (immediate value)
+        - **opcode**: 7 bits (operation code)
+    - **Subtypes and Examples**:
+        - **Branch Operations**: BEQ, BNE
+
+---
+
+5. **U-type (Upper Immediate) Instructions**
+    - **Description**: U-type instructions are used for operations involving large immediate values that need to be loaded into the upper 20 bits of a register.
+    - **Structure**:
+        - **imm[31:12]**: 20 bits (immediate value)
+        - **rd**: 5 bits (destination register)
+        - **opcode**: 7 bits (operation code)
+    - **Subtypes and Examples**:
+        - **Upper Immediate Operations**: LUI, AUIPC
+
+---
+
+6. **J-type (Jump) Instructions**
+    - **Description**: J-type instructions are used for jump operations, where the execution flow is changed to a specified address.
+    - **Structure**:
+        - **imm[20]**: 1 bit (immediate value)
+        - **imm[10:1]**: 10 bits (immediate value)
+        - **imm[11]**: 1 bit (immediate value)
+        - **imm[19:12]**: 8 bits (immediate value)
+        - **rd**: 5 bits (destination register)
+        - **opcode**: 7 bits (operation code)
+    - **Subtypes and Examples**:
+        - **Jump Operations**: JAL, JALR
+
+---
+
+#### Instructions and Their Formats with Examples
+
+1. **ADD r1, r2, r3**
+   - **Type**: R
+   - **Operation**: Adds the contents of registers r2 and r3, and stores the result in register r1.
+   - **Format**:
+     ```
+     func7   rs2    rs1    func3  rd     opcode
+     0000000 00011  00010  000    00001  0110011
+     ```
+   - **32-bit Instruction**: `0000000_00011_00010_000_00001_0110011`
+
+2. **SUB r3, r1, r2**
+   - **Type**: R
+   - **Operation**: Subtracts the contents of register r2 from register r1, and stores the result in register r3.
+   - **Format**:
+     ```
+     func7   rs2    rs1    func3  rd     opcode
+     0100000 00010  00001  000    00011  0110011
+     ```
+   - **32-bit Instruction**: `0100000_00010_00001_000_00011_0110011`
+
+3. **AND r2, r1, r3**
+   - **Type**: R
+   - **Operation**: Performs a bitwise AND between the contents of registers r1 and r3, and stores the result in register r2.
+   - **Format**:
+     ```
+     func7   rs2    rs1    func3  rd     opcode
+     0000000 00011  00001  111    00010  0110011
+     ```
+   - **32-bit Instruction**: `0000000_00011_00001_111_00010_0110011`
+
+4. **OR r8, r2, r5**
+   - **Type**: R
+   - **Operation**: Performs a bitwise OR between the contents of registers r2 and r5, and stores the result in register r8.
+   - **Format**:
+     ```
+     func7   rs2    rs1    func3  rd     opcode
+     0000000 00101  00010  110    01000  0110011
+     ```
+   - **32-bit Instruction**: `0000000_00101_00010_110_01000_0110011`
+
+5. **XOR r8, r1, r4**
+   - **Type**: R
+   - **Operation**: Performs a bitwise XOR between the contents of registers r1 and r4, and stores the result in register r8.
+   - **Format**:
+     ```
+     func7   rs2    rs1    func3  rd     opcode
+     0000000 00100  00001  100    01000  0110011
+     ```
+   - **32-bit Instruction**: `0000000_00100_00001_100_01000_0110011`
+
+6. **SLT r10, r2, r4**
+   - **Type**: R
+   - **Operation**: Sets register r10 to 1 if the contents of register r2 are less than the contents of register r4, otherwise sets it to 0.
+   - **Format**:
+     ```
+     func7   rs2    rs1    func3  rd     opcode
+     0000000 00100  00010  010    01010  0110011
+     ```
+   - **32-bit Instruction**: `0000000_00100_00010_010_01010_0110011`
+
+7. **ADDI r12, r3, 5**
+   - **Type**: I
+   - **Operation**: Adds the immediate value 5 to the contents of register r3, and stores the result in register r12.
+   - **Format**:
+     ```
+     imm[11:0]   rs1    func3  rd     opcode
+     000000000101 00011  000    01100  0010011
+     ```
+   - **32-bit Instruction**: `000000000101_00011_000_01100_0010011`
+
+8. **SW r3, r1, 4
+
+**
+   - **Type**: S
+   - **Operation**: Stores the contents of register r3 into memory at the address calculated by adding 4 to the contents of register r1.
+   - **Format**:
+     ```
+     imm[11:5]  rs2   rs1    func3  imm[4:0] opcode
+     0000000    00011 00001  010    00100    0100011
+     ```
+   - **32-bit Instruction**: `0000000_00011_00001_010_00100_0100011`
+
+9. **SRL r16, r11, r2**
+   - **Type**: R
+   - **Operation**: Performs a logical right shift on the contents of register r11 by the number of bits specified in register r2, and stores the result in register r16.
+   - **Format**:
+     ```
+     func7   rs2    rs1    func3  rd     opcode
+     0000000 00010  01011  101    10000  0110011
+     ```
+   - **32-bit Instruction**: `0000000_00010_01011_101_10000_0110011`
+
+10. **BNE r0, r1, 20**
+    - **Type**: B
+    - **Operation**: Branches to the address offset by 20 if the contents of registers r0 and r1 are not equal.
+    - **Format**:
+      ```
+      imm[12] imm[10:5]  rs2   rs1    func3  imm[4:1] imm[11] opcode
+      0       000001     00001 00000  001    0100     0       1100011
+      ```
+    - **32-bit Instruction**: `0_000001_00001_00000_001_0100_0_1100011`
+
+11. **BEQ r0, r0, 15**
+    - **Type**: B
+    - **Operation**: Branches to the address offset by 15 if the contents of registers r0 and r0 are equal.
+    - **Format**:
+      ```
+      imm[12] imm[10:5]  rs2   rs1    func3  imm[4:1] imm[11] opcode
+      0       000000     00000 00000  000    1111     0       1100011
+      ```
+    - **32-bit Instruction**: `0_000000_00000_00000_000_1111_0_1100011`
+
+12. **LW r13, r11, 2**
+    - **Type**: I
+    - **Operation**: Loads the word from memory at the address calculated by adding 2 to the contents of register r11 into register r13.
+    - **Format**:
+      ```
+      imm[11:0]   rs1    func3  rd     opcode
+      000000000010 01011  010    01101  0000011
+      ```
+    - **32-bit Instruction**: `000000000010_01011_010_01101_0000011`
+
+13. **SLL r15, r11, r2**
+    - **Type**: R
+    - **Operation**: Performs a logical left shift on the contents of register r11 by the number of bits specified in register r2, and stores the result in register r15.
+    - **Format**:
+      ```
+      func7   rs2    rs1    func3  rd     opcode
+      0000000 00010  01011  001    01111  0110011
+      ```
+    - **32-bit Instruction**: `0000000_00010_01011_001_01111_0110011`
+
+</details>
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
