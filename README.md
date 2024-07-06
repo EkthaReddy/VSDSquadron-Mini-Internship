@@ -853,3 +853,49 @@ These instructions and their corresponding formats provide a clear representatio
 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<details>
+
+<summary><h3>Task 5 : </h3></summary>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+![Task 5](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/ffb92733-d3c3-4f50-9e5a-dd753c009b96)
+![1](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/a81188f6-867b-4644-b469-f9419e023d8d)
+![2](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/eaacf040-5a27-461a-9842-10a23342f7cb)
+![3](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/389bf3de-83d2-49eb-bdb4-95fcb38a9eb8)
+![4](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/85836e80-b549-4939-834f-8d0648de5f07)
+![5](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/01a8746f-bc82-47a5-bc9f-bd26d5749154)
+![6](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/1682282f-14cc-4d64-9cbe-b2d3ab2c3792)
+![7](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/40b4ec76-375a-44da-a3fa-2b06f7aa4f57)
+![8](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/258bdc96-2f24-4950-979f-0b06f2400b4c)
+![9](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/22c3172b-1427-42f3-ba9e-60a6b087403b)
+![10](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/7072bb24-7fc6-49ef-b554-809b25e5782d)
+![11](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/51529785-f8a6-478d-bf1c-3c083152db51)
+
+
+
+
+
+
+
+
+ 
+</details>
