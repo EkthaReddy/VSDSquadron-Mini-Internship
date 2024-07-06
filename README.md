@@ -878,6 +878,11 @@ These instructions and their corresponding formats provide a clear representatio
 
 
 ![Task 5](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/ffb92733-d3c3-4f50-9e5a-dd753c009b96)
+
+![waveform](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/83f92ea3-7e29-476a-b66e-1be7c88f9e51)
+
+
+
 ![1](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/a81188f6-867b-4644-b469-f9419e023d8d)
 ![2](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/eaacf040-5a27-461a-9842-10a23342f7cb)
 ![3](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/389bf3de-83d2-49eb-bdb4-95fcb38a9eb8)
