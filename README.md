@@ -856,43 +856,82 @@ These instructions and their corresponding formats provide a clear representatio
 
 <details>
 
-<summary><h3>Task 5 : </h3></summary>
+<summary><h3>Task 5 : </h3> Using this RISC-V Core Verilog netlist and testbench for functional simulation experiment. </summary>
 
+In this task we will obtain the waveform for RISC-V using Verilog Code and Verilog Testbench. 
 
+Follow the steps to obtain the waveform for the instructions used in Task 4.
 
+Step 1 : Make the directory under `your_name` or any `specific_name`, Use command as ` mkdir <name> ` `( mkdir Ektha )`
 
+Step 2 : Copy the code from the reference code and paste it in a file name under `Ektha_rv32i.v` and `Ektha_rv32i_tb.v` in leafpad
 
+```
+The Verilog Code and Testbench used is refered by https://github.com/vinayrayapati/rv32i/
 
+```
 
+Step 3 : Give command line as ` touch Ektha_rv32i.v ` and ` touch Ektha_rv32i_tb.v ` 
 
+Step 4 : Run and simulate the verilog code by using the below command;
 
+```
+ iverilog -o Ektha_rv32i Ektha_rv32i.v Ektha_rv32i_tb.v 
+./Elktha_rv32i
+```
 
+Step 5 : To obtain the waveform in GTKWAVE type,
 
-
-
-
-
-
-
-
+`gtkwave iiitb_rv32i.vcd` 
 
 
 ![Task 5](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/ffb92733-d3c3-4f50-9e5a-dd753c009b96)
 
+It will open the new window of GTKWAVE 
+
 ![waveform](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/83f92ea3-7e29-476a-b66e-1be7c88f9e51)
 
+Now, drag the command in the same way presented under ` time ` section.
+
+Select the instructions from EX_MEM_IR[31:0] to present the instructions used in Task 4.
+
+**Instruction : ADD r1, r2, r3 **
+
+
+
+
+
+
+
+
+
+BEQ r0, r0, 15
+LW r13, r11, 2
 
 
 ![1](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/a81188f6-867b-4644-b469-f9419e023d8d)
+
+
+**Instruction : SUB r3, r1, r2 **
+
 ![2](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/eaacf040-5a27-461a-9842-10a23342f7cb)
+**Instruction : AND r2, r1, r3 **
 ![3](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/389bf3de-83d2-49eb-bdb4-95fcb38a9eb8)
+**Instruction : OR r8, r2, r5 **
 ![4](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/85836e80-b549-4939-834f-8d0648de5f07)
+**Instruction : XOR r8, r1, r4 **
 ![5](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/01a8746f-bc82-47a5-bc9f-bd26d5749154)
+**Instruction : SLT r10, r2, r4 **
 ![6](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/1682282f-14cc-4d64-9cbe-b2d3ab2c3792)
+**Instruction : ADDI r12, r3, 5 **
 ![7](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/40b4ec76-375a-44da-a3fa-2b06f7aa4f57)
+**Instruction : SW r3, r1, 4 **
 ![8](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/258bdc96-2f24-4950-979f-0b06f2400b4c)
+**Instruction : SRL r16, r11, r2 **
 ![9](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/22c3172b-1427-42f3-ba9e-60a6b087403b)
+**Instruction : BNE r0, r1, 20 **
 ![10](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/7072bb24-7fc6-49ef-b554-809b25e5782d)
+**Instruction : SLL r15, r11, r2 **
 ![11](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/51529785-f8a6-478d-bf1c-3c083152db51)
 
 
@@ -904,3 +943,5 @@ These instructions and their corresponding formats provide a clear representatio
 
  
 </details>
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
