@@ -884,8 +884,8 @@ Step 5 : To obtain the waveform in GTKWAVE type,
 
 `gtkwave iiitb_rv32i.vcd` 
 
+![Screenshot (606)](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/fe260183-ab78-400f-bb78-0d1803262a06)
 
-![Task 5](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/ffb92733-d3c3-4f50-9e5a-dd753c009b96)
 
 It will open the new window of GTKWAVE 
 
@@ -895,44 +895,51 @@ Now, drag the command in the same way presented under ` time ` section.
 
 Select the instructions from EX_MEM_IR[31:0] to present the instructions used in Task 4.
 
-**Instruction : ADD r1, r2, r3 **
+**Instruction ADD r1, r2, r3 :**
+
+![Screenshot (605)](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/6a5f0ad0-1be0-4aae-8123-98a1b3655d0b)
 
 
+**Instruction SUB r3, r1, r2 :**
 
+![Screenshot (607)](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/32b3dee4-0df1-40d6-91d9-2c404b214566)
 
+**Instruction AND r2, r1, r3 :**
 
+![Screenshot (608)](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/30b41759-c93f-4be0-a901-8088ca4f1544)
 
+**Instruction OR r8, r2, r5 :**
 
+![Screenshot (609)](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/f42a30aa-875e-4cb5-bb1a-298e1cc98e32)
 
+**Instruction XOR r8, r1, r4 :**
 
-BEQ r0, r0, 15
-LW r13, r11, 2
+![Screenshot (610)](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/572870a0-16b8-4712-8090-56b8f78886eb)
 
+**Instruction SLT r10, r2, r4 :**
 
-![1](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/a81188f6-867b-4644-b469-f9419e023d8d)
+![Screenshot (611)](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/776b8598-436c-4118-ab8b-ddc551367748)
 
+**Instruction ADDI r12, r3, 5 :**
 
-**Instruction : SUB r3, r1, r2 **
+![Screenshot (612)](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/d50fce84-f2f1-42e7-9811-fa1e8c9b1f5a)
 
-![2](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/eaacf040-5a27-461a-9842-10a23342f7cb)
-**Instruction : AND r2, r1, r3 **
-![3](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/389bf3de-83d2-49eb-bdb4-95fcb38a9eb8)
-**Instruction : OR r8, r2, r5 **
-![4](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/85836e80-b549-4939-834f-8d0648de5f07)
-**Instruction : XOR r8, r1, r4 **
-![5](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/01a8746f-bc82-47a5-bc9f-bd26d5749154)
-**Instruction : SLT r10, r2, r4 **
-![6](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/1682282f-14cc-4d64-9cbe-b2d3ab2c3792)
-**Instruction : ADDI r12, r3, 5 **
-![7](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/40b4ec76-375a-44da-a3fa-2b06f7aa4f57)
-**Instruction : SW r3, r1, 4 **
-![8](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/258bdc96-2f24-4950-979f-0b06f2400b4c)
-**Instruction : SRL r16, r11, r2 **
-![9](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/22c3172b-1427-42f3-ba9e-60a6b087403b)
-**Instruction : BNE r0, r1, 20 **
-![10](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/7072bb24-7fc6-49ef-b554-809b25e5782d)
-**Instruction : SLL r15, r11, r2 **
-![11](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/51529785-f8a6-478d-bf1c-3c083152db51)
+**Instruction SW r3, r1, 4 :**
+
+![Screenshot (613)](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/c1b525c8-c9db-463b-b20f-5889fa593bac)
+
+**Instruction SRL r16, r11, r2 :**
+
+![Screenshot (614)](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/d2751922-6fee-4856-9ef6-5eec7c34fce1)
+
+**Instruction BNE r0, r1, 20 :**
+
+![Screenshot (615)](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/cb8cd7a0-c563-4870-85cf-46b5fc7ec940)
+
+**Instruction SLL r15, r11, r2 :**
+
+![Screenshot (616)](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/49200c37-7455-4f1d-af3c-de3d8a45ba7d)
+
 
 
 
