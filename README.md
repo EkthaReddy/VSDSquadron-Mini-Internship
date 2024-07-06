@@ -856,7 +856,7 @@ These instructions and their corresponding formats provide a clear representatio
 
 <details>
 
-<summary><h3>Task 5 : </h3> Using this RISC-V Core Verilog netlist and testbench for functional simulation experiment. </summary>
+<summary><h3>Task 5 : </h3> Using RISC-V Core Verilog netlist and testbench for functional simulation experiment. </summary>
 
 In this task we will obtain the waveform for RISC-V using Verilog Code and Verilog Testbench. 
 
@@ -866,10 +866,9 @@ Step 1 : Make the directory under `your_name` or any `specific_name`, Use comman
 
 Step 2 : Copy the code from the reference code and paste it in a file name under `Ektha_rv32i.v` and `Ektha_rv32i_tb.v` in leafpad
 
-```
-The Verilog Code and Testbench used is refered by https://github.com/vinayrayapati/rv32i/
 
-```
+> The Verilog Code and Testbench used is refered by https://github.com/vinayrayapati/rv32i/
+
 
 Step 3 : Give command line as ` touch Ektha_rv32i.v ` and ` touch Ektha_rv32i_tb.v ` 
 
@@ -880,7 +879,7 @@ Step 4 : Run and simulate the verilog code by using the below command;
 ./Elktha_rv32i
 ```
 
-Step 5 : To obtain the waveform in GTKWAVE type,
+Step 5 : To obtain the waveform in GTKWAVE, type;
 
 `gtkwave iiitb_rv32i.vcd` 
 
@@ -941,10 +940,8 @@ Select the instructions from EX_MEM_IR[31:0] to present the instructions used in
 ![Screenshot (616)](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/49200c37-7455-4f1d-af3c-de3d8a45ba7d)
 
 
-
-
-
-
+**To conclude :** 
+The output waveform for the list of instructions are obtained in GTKWAVE.
 
 
 
