@@ -948,3 +948,36 @@ The output waveform for the list of instructions are obtained in GTKWAVE.
 </details>
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<details>
+
+ <summary><h3>Task 6 : </h3> Vending Machine Using VSDsquadron Mini Board, Push Button, and LEDs</summary>
+
+
+#### Overview
+The Vending Machine project simulates the functionality of a vending machine using the VSDsquadron mini board. This system utilizes push buttons to input coins of different denominations and LEDs to indicate various states and operations of the machine. By implementing a state machine in C, the project manages the coin inputs and provides change accordingly, making it an interactive and educational project for learning embedded systems and state machine design.
+
+#### Components Required to Build Vending Machine
+- VSDsquadron Mini Board
+- Push Buttons
+- LEDs
+- Breadboard
+- Jumper Wires
+  
+#### Circuit Connection for Vending Machine
+
+- Push Buttons: Connect one terminal of each push button to GPIO pins on the VSDsquadron mini board. The other terminal of each button should be connected to ground.
+- LEDs: Connect the anodes of the LEDs to GPIO pins on the VSDsquadron mini board through current-limiting resistors. Connect the cathodes to ground.
+- Power Supply: Ensure the VSDsquadron mini board is powered through an appropriate power source.
+
+#### Pinout Diagram for Vending Machine
+
+|Component |	VSDsquadron Mini Board|
+|----------|-----------------------|
+|Push Button | GPIO Pins|
+|LED	| GPIO Pins|
+|GND	| GND|
+
+
+
+</details>
