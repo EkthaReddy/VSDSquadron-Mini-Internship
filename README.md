@@ -978,7 +978,9 @@ The Vending Machine project simulates the functionality of a vending machine usi
 |LED	| GPIO Pins|
 |GND	| GND|
 
+#### Pinout Diagram for Vending Machine
 
+![Untitled design (2)](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/f65e0b00-f94e-4026-880d-c4d1e5db95f2)
 
 
 #### How to program
