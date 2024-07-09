@@ -978,6 +978,12 @@ The Vending Machine project simulates the functionality of a vending machine usi
 |LED	| GPIO Pins|
 |GND	| GND|
 
+
+#### Diagram For Vending Machine
+
+![Untitled design](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/81ff35b9-c6c7-4878-a21f-97e74556e3cd)
+
+
 #### How to program
 
 ```
@@ -1115,4 +1121,7 @@ void HardFault_Handler(void) {
 }
 
 ```
+
+
+
 </details>
