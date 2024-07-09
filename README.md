@@ -978,6 +978,141 @@ The Vending Machine project simulates the functionality of a vending machine usi
 |LED	| GPIO Pins|
 |GND	| GND|
 
+#### How to program
 
+```
+#include <ch32v00x.h>
+#include <debug.h>
+#include <stdio.h>
 
+// Define states
+typedef enum { S0, S5, S10, S20, S50 } State;
+
+// Function prototypes
+void vending_machine(State *state, int coin, int *nw_pa, int *ret5, int *ret10, int *ret20);
+void GPIO_Config(void);
+int read_coin(void);
+void update_outputs(int nw_pa, int ret5, int ret10, int ret20);
+
+// Function to handle state transitions and actions
+void vending_machine(State *state, int coin, int *nw_pa, int *ret5, int *ret10, int *ret20) {
+    *nw_pa = 0;
+    *ret5 = 0;
+    *ret10 = 0;
+    *ret20 = 0;
+
+    switch (*state) {
+        case S0:
+            if (coin == 1) *state = S5;
+            else if (coin == 2) *state = S10;
+            else if (coin == 3) *state = S20;
+            else if (coin == 4) *state = S50;
+            break;
+        case S5:
+            *nw_pa = 1;
+            if (coin == 2) *ret5 = 1;
+            else if (coin == 3) {
+                *ret5 = 1;
+                *ret10 = 1;
+            } else if (coin == 4) {
+                *ret5 = 1;
+                *ret20 = 1;
+            }
+            break;
+        case S10:
+            *nw_pa = 1;
+            if (coin == 3) *ret10 = 1;
+            break;
+        case S20:
+            *nw_pa = 1;
+            break;
+        case S50:
+            *nw_pa = 1;
+            if (coin == 4) *ret20 = 1;
+            break;
+        default:
+            *state = S0;
+            break;
+    }
+}
+
+void GPIO_Config(void) {
+    GPIO_InitTypeDef GPIO_InitStructure = {0};
+
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOD, ENABLE); // Enable clock for Port D
+
+    // Configure GPIOs for input (coin buttons)
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_3 | GPIO_Pin_4 | GPIO_Pin_5 | GPIO_Pin_6;
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPU; // Input with pull-up
+    GPIO_Init(GPIOD, &GPIO_InitStructure);
+
+    // Configure GPIOs for output (indicators)
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_0 | GPIO_Pin_1 | GPIO_Pin_2;
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP; // Push-pull output
+    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+    GPIO_Init(GPIOD, &GPIO_InitStructure);
+}
+
+int read_coin(void) {
+    if (!GPIO_ReadInputDataBit(GPIOD, GPIO_Pin_3)) return 1;
+    if (!GPIO_ReadInputDataBit(GPIOD, GPIO_Pin_4)) return 2;
+    if (!GPIO_ReadInputDataBit(GPIOD, GPIO_Pin_5)) return 3;
+    if (!GPIO_ReadInputDataBit(GPIOD, GPIO_Pin_6)) return 4;
+    return 0;
+}
+
+void update_outputs(int nw_pa, int ret5, int ret10, int ret20) {
+    if (nw_pa) {
+        GPIO_SetBits(GPIOD, GPIO_Pin_0);
+    } else {
+        GPIO_ResetBits(GPIOD, GPIO_Pin_0);
+    }
+
+    if (ret5) {
+        GPIO_SetBits(GPIOD, GPIO_Pin_1);
+    } else {
+        GPIO_ResetBits(GPIOD, GPIO_Pin_1);
+    }
+
+    if (ret10) {
+        GPIO_SetBits(GPIOD, GPIO_Pin_2);
+    } else {
+        GPIO_ResetBits(GPIOD, GPIO_Pin_2);
+    }
+}
+
+int main(void) {
+    State state = S0;
+    int coin;
+    int nw_pa = 0, ret5 = 0, ret10 = 0, ret20 = 0;
+
+    NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
+    SystemCoreClockUpdate();
+    Delay_Init();
+    GPIO_Config();
+
+    while (1) {
+        coin = read_coin();
+        
+        if (coin != 0) {
+            vending_machine(&state, coin, &nw_pa, &ret5, &ret10, &ret20);
+            update_outputs(nw_pa, ret5, ret10, ret20);
+
+            // Simulate a short delay for debouncing
+            Delay_Ms(200);
+        }
+    }
+
+    return 0;
+}
+
+void NMI_Handler(void) {
+}
+
+void HardFault_Handler(void) {
+    while (1) {
+    }
+}
+
+```
 </details>
