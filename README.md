@@ -201,7 +201,7 @@ We have now understood the functionality of Vending Machine, the next task is to
 
 The C program of vending machine is given below,
 
-------------------------------------------------------------------------------------------------------------------------------------------
+```
 #include <stdio.h>
 
 // Define states
@@ -276,8 +276,7 @@ int main() {
     return 0;
 }
 
------------------------------------------------------------------------------------------------
-
+```
 **Explanation to code**:
 
 - **State Definition**:
