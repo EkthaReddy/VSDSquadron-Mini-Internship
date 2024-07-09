@@ -979,9 +979,6 @@ The Vending Machine project simulates the functionality of a vending machine usi
 |GND	| GND|
 
 
-#### Diagram For Vending Machine
-
-![Untitled design (1)](https://github.com/EkthaReddy/VSDSquadron-Mini-Internship/assets/152515939/63b1d855-1686-4a17-9de4-3fcf0e05ac3c)
 
 
 #### How to program
