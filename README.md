@@ -1,5 +1,5 @@
 # VSDSquadron-Mini-Internship
-An internship on RISC-V and VLSI using VSDSquadron Mini Board provided by Kunal Ghosh in VLSI System Design (VSD).
+An internship on RISC-V and VLSI using VSDSquadron Mini Board provided by Kunal Ghosh at VLSI System Design (VSD).
 
 <details>
 <summary><h3>Overview of the internship</h3></summary>
