@@ -1121,7 +1121,7 @@ void HardFault_Handler(void) {
 
 ```
 
-
+**Connection for the project :**
 ![WhatsApp Image 2024-07-14 at 8 30 05 PM](https://github.com/user-attachments/assets/e735299b-19d3-4b69-9d12-08795db94e91)
 
 
