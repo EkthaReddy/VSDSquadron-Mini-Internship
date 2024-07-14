@@ -1120,7 +1120,9 @@ void HardFault_Handler(void) {
 }
 
 ```
-![WhatsApp Image 2024-07-14 at 8 30 05 PM](https://github.com/user-attachments/assets/d2cb12d3-ba5c-4b75-98fe-7c4a39c5c208)
+
+
+![WhatsApp Image 2024-07-14 at 8 30 05 PM](https://github.com/user-attachments/assets/e735299b-19d3-4b69-9d12-08795db94e91)
 
 
 [**Vending Machine Project Explanation by using the VSDSquadron mini board :**]( https://drive.google.com/file/d/1PbkhLV-CYv4PbRDctvimwJFlCmgcGE3z/view?usp=sharing)
