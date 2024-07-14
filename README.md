@@ -1121,11 +1121,12 @@ void HardFault_Handler(void) {
 
 ```
 
-**Connection for the project :**
+#### Connection for the project
 ![WhatsApp Image 2024-07-14 at 8 30 05 PM](https://github.com/user-attachments/assets/e735299b-19d3-4b69-9d12-08795db94e91)
 
 
-[**Vending Machine Project Explanation by using the VSDSquadron mini board :**]( https://drive.google.com/file/d/1PbkhLV-CYv4PbRDctvimwJFlCmgcGE3z/view?usp=sharing)
+#### [Vending Machine Project Explanation by using the VSDSquadron mini board :](
+https://drive.google.com/file/d/1PbkhLV-CYv4PbRDctvimwJFlCmgcGE3z/view?usp=sharing)
 
 
 </details>
