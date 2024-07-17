@@ -1143,8 +1143,15 @@ void HardFault_Handler(void) {
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <details>
 
-<summary><h3>Internship Completion Certificate</h3></summary>
+*<summary><h4>Acknowledgment</h4></summary>*
 
-
-
+>
+>I would like to express my special thanking to my mentor *Kunal Ghosh*, and sincere gratitude to *Vlsi System Design* for providing me with the opportunity to intern remotely with their team. This internship has been an invaluable experience, allowing me to delve deep into embedded systems, RISC-V architecture, and VLSI design under the guidance of dedicated mentors.
+>
+>I am thankful for the support and knowledge imparted to me during this journey. It has significantly enhanced my technical skills and prepared me for future challenges in the field of digital design. I look forward to applying the lessons learned here in my continued pursuit of excellence in engineering.
+>
 </details>
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
